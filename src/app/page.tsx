@@ -35,7 +35,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="mb-6 text-white drop-shadow-lg">
-              Best shape of your life, 30 minutes at a time.
+              Join Timothenics for $1
             </h1>
             <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto drop-shadow-md">
               Build strength and unlock your body's full potential with efficient 30-minute calisthenics sessions.
