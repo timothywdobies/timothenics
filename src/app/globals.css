@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
   }
@@ -25,5 +29,23 @@
 
   p {
     @apply text-base md:text-lg leading-relaxed;
+  }
+
+  /* Custom scrollbar for dark theme */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #0066FF;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0052CC;
   }
 }

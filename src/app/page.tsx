@@ -19,48 +19,48 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+      <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden group">
+        {/* Background Image with parallax effect */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
           style={{
             backgroundImage: 'url(/hero-image.jpg)',
-            backgroundColor: '#9E9EA2',
+            backgroundColor: '#0a0a0a',
           }}
         >
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
-          <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-foreground/60 mb-6">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 animate-fade-in">
+          <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-foreground/60 mb-6 animate-slide-up">
             ELITE TRAINING FOR BUSY PEOPLE
           </p>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight animate-slide-up" style={{ animationDelay: '0.1s' }}>
             Join Timothenics for $1
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Get your first month for just $1 and train alongside thousands building elite strength in 30-minute sessions.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <a
               href="#free-plan"
-              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
             >
-              <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 mr-3 transition-transform group-hover/btn:rotate-12" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
               </svg>
               Get Free 7-Day Plan
             </a>
             <a
               href="/programs"
-              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-dark text-white font-semibold text-sm uppercase tracking-wide hover:bg-gray-900 transition-all shadow-lg hover:shadow-xl"
+              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-accent text-white font-semibold text-sm uppercase tracking-wide hover:bg-accent-hover transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
             >
-              <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              <svg className="w-5 h-5 mr-3 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
               See Timothenics 30
             </a>
@@ -69,42 +69,42 @@ export default function Home() {
       </section>
 
       {/* Programs Section - Full Width */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image Placeholder */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden group">
+        {/* Background Image Placeholder with hover zoom */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-110"
           style={{
             backgroundImage: 'url(/programs-bg.jpg)',
-            backgroundColor: '#1a1a1a',
+            backgroundColor: '#0a0a0a',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50 group-hover:from-black/85 transition-all duration-500"></div>
         </div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-2xl">
-            <svg className="w-16 h-16 md:w-20 md:h-20 text-accent mb-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="max-w-2xl transform transition-all duration-500 group-hover:translate-x-4">
+            <svg className="w-16 h-16 md:w-20 md:h-20 text-accent mb-8 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
-            <h2 className="text-white mb-6">Programs</h2>
-            <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed">
+            <h2 className="text-white mb-6 transition-colors duration-300 group-hover:text-accent">Programs</h2>
+            <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed transition-all duration-300 group-hover:text-foreground">
               Structured 30-minute sessions designed for real life. Progressive systems that build serious strength without your life revolving around training.
             </p>
             <ul className="space-y-3 mb-10 text-foreground/70">
-              <li className="flex items-start">
+              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-foreground">
                 <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Timothenics 30 - 8-week cycle, 4 sessions/week</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-foreground">
                 <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Push, pull, legs, and core progressions</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-foreground">
                 <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
@@ -113,10 +113,10 @@ export default function Home() {
             </ul>
             <a
               href="/programs"
-              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
             >
               Explore Programs
-              <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 ml-3 transition-transform duration-300 group-hover/btn:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </a>
