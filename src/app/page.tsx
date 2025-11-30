@@ -49,6 +49,83 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Main Offerings - Programs, Equipment, Clothing */}
+      <section className="py-20 md:py-32 bg-foreground">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-white mb-4">Everything You Need</h2>
+            <p className="text-white/80 text-xl max-w-2xl mx-auto">
+              Elite training systems, minimal gear, and apparel built for movement.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Programs */}
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-accent to-accent/80 p-8 md:p-10 hover:scale-105 transition-all duration-300 cursor-pointer">
+              <div className="relative z-10">
+                <div className="text-6xl mb-6">💪</div>
+                <h3 className="text-3xl font-bold text-white mb-4">Programs</h3>
+                <p className="text-white/90 mb-6 text-lg">
+                  Structured 30-minute sessions designed for real life. Progressive systems that build serious strength.
+                </p>
+                <ul className="space-y-2 mb-8 text-white/80">
+                  <li>• Timothenics 30 (8-week cycle)</li>
+                  <li>• 4 sessions per week</li>
+                  <li>• Push, pull, legs, core</li>
+                  <li>• Home or park training</li>
+                </ul>
+                <Button href="/programs" variant="outline" className="border-white text-white hover:bg-white hover:text-accent">
+                  View Programs
+                </Button>
+              </div>
+              <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+            </div>
+
+            {/* Equipment */}
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-background p-8 md:p-10 hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-foreground/10">
+              <div className="relative z-10">
+                <div className="text-6xl mb-6">🎯</div>
+                <h3 className="text-3xl font-bold text-foreground mb-4">Equipment</h3>
+                <p className="text-foreground/80 mb-6 text-lg">
+                  Minimal tools that maximize results. Bands, parallettes, sliders—everything you actually need.
+                </p>
+                <ul className="space-y-2 mb-8 text-foreground/70">
+                  <li>• Resistance bands (3 levels)</li>
+                  <li>• Slider discs for any surface</li>
+                  <li>• Parallettes (coming soon)</li>
+                  <li>• Portable and effective</li>
+                </ul>
+                <Button href="/gear" variant="primary">
+                  Shop Equipment
+                </Button>
+              </div>
+              <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-accent/5 rounded-full blur-3xl"></div>
+            </div>
+
+            {/* Clothing */}
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-foreground/90 to-foreground p-8 md:p-10 hover:scale-105 transition-all duration-300 cursor-pointer">
+              <div className="relative z-10">
+                <div className="text-6xl mb-6">👕</div>
+                <h3 className="text-3xl font-bold text-white mb-4">Clothing</h3>
+                <p className="text-white/90 mb-6 text-lg">
+                  Training apparel designed for movement. Minimal branding, maximum function.
+                </p>
+                <ul className="space-y-2 mb-8 text-white/80">
+                  <li>• Performance training tees</li>
+                  <li>• Movement-focused fit</li>
+                  <li>• Clean, minimal design</li>
+                  <li>• Launching soon</li>
+                </ul>
+                <Button href="#" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground opacity-60 cursor-not-allowed">
+                  Coming Soon
+                </Button>
+              </div>
+              <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Built for Busy People */}
       <Section
         title="Built for a full day, not a free day."
