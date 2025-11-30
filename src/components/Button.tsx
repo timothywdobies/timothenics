@@ -4,7 +4,7 @@ import Link from 'next/link'
 interface ButtonProps {
   children: React.ReactNode
   href?: string
-  onClick?: () => void
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
   variant?: 'primary' | 'secondary' | 'outline'
   className?: string
   type?: 'button' | 'submit' | 'reset'
