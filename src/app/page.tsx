@@ -19,330 +19,228 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section with Background Image */}
-      <section className="relative py-32 md:py-48 overflow-hidden">
-        {/* Background Image - Replace /hero-image.jpg with your actual image path */}
+      <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(/hero-image.jpg)',
+            backgroundColor: '#9E9EA2',
           }}
         >
-          {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/60 to-foreground/80"></div>
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="mb-6 text-white drop-shadow-lg">
-              Join Timothenics for $1
-            </h1>
-            <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto drop-shadow-md">
-              Build strength and unlock your body's full potential with efficient 30-minute calisthenics sessions.
-              Designed for stacked schedules. Train at home or at a park with minimal gear.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="#free-plan">Get the Free 7-Day Plan</Button>
-              <Button href="/programs" variant="secondary">See Timothenics 30</Button>
-            </div>
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+          <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-foreground/60 mb-6">
+            ELITE TRAINING FOR BUSY PEOPLE
+          </p>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight">
+            Join Timothenics for $1
+          </h1>
+          <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+            Get your first month for just $1 and train alongside thousands building elite strength in 30-minute sessions.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#free-plan"
+              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+            >
+              <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
+              </svg>
+              Get Free 7-Day Plan
+            </a>
+            <a
+              href="/programs"
+              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-dark text-white font-semibold text-sm uppercase tracking-wide hover:bg-gray-900 transition-all shadow-lg hover:shadow-xl"
+            >
+              <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              See Timothenics 30
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Main Offerings - Programs, Equipment, Clothing */}
-      <section className="py-20 md:py-32 bg-foreground">
+      {/* Main Offerings - Clean Grid */}
+      <section className="py-24 md:py-32 bg-background-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-white mb-4">Everything You Need</h2>
-            <p className="text-white/80 text-xl max-w-2xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-white mb-4">EVERYTHING YOU NEED</h2>
+            <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
               Elite training systems, minimal gear, and apparel built for movement.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Programs */}
-            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-accent to-accent/80 p-8 md:p-10 hover:scale-105 transition-all duration-300 cursor-pointer">
-              <div className="relative z-10">
-                <div className="text-6xl mb-6">💪</div>
-                <h3 className="text-3xl font-bold text-white mb-4">Programs</h3>
-                <p className="text-white/90 mb-6 text-lg">
-                  Structured 30-minute sessions designed for real life. Progressive systems that build serious strength.
-                </p>
-                <ul className="space-y-2 mb-8 text-white/80">
-                  <li>• Timothenics 30 (8-week cycle)</li>
-                  <li>• 4 sessions per week</li>
-                  <li>• Push, pull, legs, core</li>
-                  <li>• Home or park training</li>
-                </ul>
-                <Button href="/programs" variant="outline" className="border-white text-white hover:bg-white hover:text-accent">
-                  View Programs
-                </Button>
+            <a href="/programs" className="group block">
+              <div className="relative overflow-hidden rounded-lg bg-background border border-white/10 hover:border-accent transition-all duration-300 h-full">
+                <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                  <span className="text-8xl">💪</span>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-white mb-3 uppercase">Programs</h3>
+                  <p className="text-foreground/60 mb-4">
+                    30-minute sessions. Progressive structure. Real strength.
+                  </p>
+                  <div className="flex items-center text-accent text-sm font-semibold uppercase tracking-wide group-hover:translate-x-2 transition-transform">
+                    Explore Programs
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
-            </div>
+            </a>
 
             {/* Equipment */}
-            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-background p-8 md:p-10 hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-foreground/10">
-              <div className="relative z-10">
-                <div className="text-6xl mb-6">🎯</div>
-                <h3 className="text-3xl font-bold text-foreground mb-4">Equipment</h3>
-                <p className="text-foreground/80 mb-6 text-lg">
-                  Minimal tools that maximize results. Bands, parallettes, sliders—everything you actually need.
-                </p>
-                <ul className="space-y-2 mb-8 text-foreground/70">
-                  <li>• Resistance bands (3 levels)</li>
-                  <li>• Slider discs for any surface</li>
-                  <li>• Parallettes (coming soon)</li>
-                  <li>• Portable and effective</li>
-                </ul>
-                <Button href="/gear" variant="primary">
-                  Shop Equipment
-                </Button>
+            <a href="/gear" className="group block">
+              <div className="relative overflow-hidden rounded-lg bg-background border border-white/10 hover:border-accent transition-all duration-300 h-full">
+                <div className="aspect-[4/3] bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center">
+                  <span className="text-8xl">🎯</span>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-white mb-3 uppercase">Equipment</h3>
+                  <p className="text-foreground/60 mb-4">
+                    Minimal tools that maximize results. Bands, sliders, parallettes.
+                  </p>
+                  <div className="flex items-center text-accent text-sm font-semibold uppercase tracking-wide group-hover:translate-x-2 transition-transform">
+                    Shop Equipment
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-accent/5 rounded-full blur-3xl"></div>
-            </div>
+            </a>
 
             {/* Clothing */}
-            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-foreground/90 to-foreground p-8 md:p-10 hover:scale-105 transition-all duration-300 cursor-pointer">
-              <div className="relative z-10">
-                <div className="text-6xl mb-6">👕</div>
-                <h3 className="text-3xl font-bold text-white mb-4">Clothing</h3>
-                <p className="text-white/90 mb-6 text-lg">
-                  Training apparel designed for movement. Minimal branding, maximum function.
-                </p>
-                <ul className="space-y-2 mb-8 text-white/80">
-                  <li>• Performance training tees</li>
-                  <li>• Movement-focused fit</li>
-                  <li>• Clean, minimal design</li>
-                  <li>• Launching soon</li>
-                </ul>
-                <Button href="#" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground opacity-60 cursor-not-allowed">
-                  Coming Soon
-                </Button>
+            <a href="/clothing" className="group block">
+              <div className="relative overflow-hidden rounded-lg bg-background border border-white/10 hover:border-accent transition-all duration-300 h-full">
+                <div className="aspect-[4/3] bg-gradient-to-br from-foreground-muted/10 to-foreground-muted/5 flex items-center justify-center">
+                  <span className="text-8xl">👕</span>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-white mb-3 uppercase">Apparel</h3>
+                  <p className="text-foreground/60 mb-4">
+                    Training apparel designed for movement. Clean, functional design.
+                  </p>
+                  <div className="flex items-center text-foreground/40 text-sm font-semibold uppercase tracking-wide">
+                    Coming Soon
+                  </div>
+                </div>
               </div>
-              <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Built for Busy People */}
-      <Section
-        title="Built for a full day, not a free day."
-        subtitle="Most training programs assume you have unlimited time. Timothenics doesn't."
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card hover>
-            <h4 className="mb-3">You already have a full calendar</h4>
-            <p className="text-foreground/70">
-              Work, school, family, side projects. Your schedule is stacked, and that's not changing.
-            </p>
-          </Card>
-          <Card hover>
-            <h4 className="mb-3">You don't need a 90-minute split</h4>
-            <p className="text-foreground/70">
-              Traditional programs demand hours plus commute time. That's a dealbreaker when you barely have 30 free minutes.
-            </p>
-          </Card>
-          <Card hover>
-            <h4 className="mb-3">You need 30 focused minutes</h4>
-            <p className="text-foreground/70">
-              Strip away the filler. Focus on what actually builds strength. Get in, work hard, get out.
-            </p>
-          </Card>
-          <Card hover>
-            <h4 className="mb-3">You need a clear plan</h4>
-            <p className="text-foreground/70">
-              No guesswork, no wandering around. Just show up, follow the session, and watch yourself get stronger.
-            </p>
-          </Card>
-        </div>
-      </Section>
-
-      {/* Session Framework (5-20-5) */}
-      <Section
-        title="How Timothenics sessions work"
-        subtitle="Every session follows the same efficient 5–20–5 structure"
-        dark
-      >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="text-center">
-            <div className="text-5xl md:text-6xl font-bold mb-4 text-accent">5</div>
-            <h4 className="mb-3">Warm-up & Activation</h4>
-            <p className="text-background/80">
-              Get your joints mobile and muscles firing. Prepare your body for serious work.
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="text-5xl md:text-6xl font-bold mb-4 text-accent">20</div>
-            <h4 className="mb-3">Main Strength Work</h4>
-            <p className="text-background/80">
-              Push, pull, or legs focus. Progressive exercises that build real strength and visible physique changes.
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="text-5xl md:text-6xl font-bold mb-4 text-accent">5</div>
-            <h4 className="mb-3">Core or Skill</h4>
-            <p className="text-background/80">
-              Finish with targeted core work or skill practice. Lock in the session.
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      {/* Flagship Program Highlight */}
-      <Section
-        title="Timothenics 30 – The 8-Week Cycle"
-        subtitle="The complete system for building strength in 30-minute sessions"
-      >
-        <div className="max-w-3xl mx-auto">
-          <Card className="text-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-              <div>
-                <div className="text-3xl font-bold text-accent mb-2">8</div>
-                <p className="text-sm text-foreground/70">Weeks</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent mb-2">4</div>
-                <p className="text-sm text-foreground/70">Sessions/Week</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent mb-2">~30</div>
-                <p className="text-sm text-foreground/70">Minutes Each</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent mb-2">Min</div>
-                <p className="text-sm text-foreground/70">Gear Needed</p>
-              </div>
-            </div>
-            <p className="text-lg mb-6 text-foreground/80">
-              A pull-up bar, the floor, and optional bands. That's all you need to build strength in push, pull, legs, and core.
-            </p>
-            <p className="text-base mb-8 text-foreground/70">
-              Expect visible physique changes, more reps in core movements, and the confidence that comes from
-              consistently hitting your sessions without your life revolving around training.
-            </p>
-            <Button href="/programs">View Timothenics 30</Button>
-          </Card>
-        </div>
-      </Section>
-
-      {/* Gear Preview */}
-      <Section
-        title="The Timothenics Setup"
-        subtitle="You don't need a full gym. A bar, the floor, and a few smart tools are enough."
-        className="bg-white"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <Card hover>
-            <h4 className="mb-4">Resistance Bands</h4>
-            <p className="text-foreground/70 mb-4">
-              Scale progressions, add resistance, or assist difficult movements. Versatile and portable.
-            </p>
-            <p className="text-sm text-accent font-semibold">Essential for progression</p>
-          </Card>
-          <Card hover>
-            <h4 className="mb-4">Parallettes</h4>
-            <p className="text-foreground/70 mb-4">
-              Elevate your push-ups, L-sits, and handstand work. Unlock advanced bodyweight strength.
-            </p>
-            <p className="text-sm text-accent font-semibold">Optional but powerful</p>
-          </Card>
-          <Card hover>
-            <h4 className="mb-4">Sliders</h4>
-            <p className="text-foreground/70 mb-4">
-              Turn any floor into a dynamic training surface. Perfect for hamstring curls and core work.
-            </p>
-            <p className="text-sm text-accent font-semibold">Minimal cost, maximum impact</p>
-          </Card>
-        </div>
-        <div className="text-center mt-10">
-          <Button href="/gear" variant="outline">Explore Gear</Button>
-        </div>
-      </Section>
-
-      {/* Why 30 Minutes Works */}
-      <Section
-        title="You don't need more time. You need more intention."
-        subtitle="30 minutes of focused work beats hours of distracted training"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <Card>
-            <h4 className="mb-3">30 minutes kills filler</h4>
-            <p className="text-foreground/70">
-              When you only have 30 minutes, you can't afford to waste time. Every exercise counts. Every set has a purpose.
-            </p>
-          </Card>
-          <Card>
-            <h4 className="mb-3">It fits before work or after dinner</h4>
-            <p className="text-foreground/70">
-              You don't need to carve out two hours. 30 minutes fits in the early morning, lunch break, or whenever the noise dies down.
-            </p>
-          </Card>
-          <Card>
-            <h4 className="mb-3">Four honest sessions beat perfect plans you skip</h4>
-            <p className="text-foreground/70">
-              Consistency wins. Four 30-minute sessions you actually complete beat the perfect 90-minute workout you keep postponing.
-            </p>
-          </Card>
-        </div>
-      </Section>
-
-      {/* Email Capture - Free 7-Day Plan */}
-      <Section
-        id="free-plan"
-        title="Test it for a week. Free."
-        subtitle="Get the 7-Day Timothenics Start plan and experience how 30-minute sessions fit into your actual life"
-        dark
-      >
-        <div className="max-w-xl mx-auto">
-          <Card className="bg-background text-foreground">
-            <form onSubmit={handleEmailSubmit}>
-              <div className="mb-4">
-                <p className="mb-6 text-foreground/80">
-                  7 complete sessions. Each one 30 minutes or less. See what focused training feels like.
-                </p>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email address"
-                  required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-foreground/20 focus:border-accent focus:outline-none text-base"
-                />
-              </div>
-              <Button type="submit" className="w-full">Send Me the Plan</Button>
-            </form>
-          </Card>
-        </div>
-      </Section>
-
-      {/* Social/Content Strip */}
-      <Section className="bg-white py-12">
-        <div className="text-center">
-          <h3 className="mb-4">See how Timothenics looks in real life.</h3>
-          <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Follow along for session breakdowns, form tips, and proof that 30 minutes is enough.
+      {/* Features - Build for Busy People */}
+      <Section className="bg-background">
+        <div className="text-center mb-16">
+          <h2 className="text-white mb-4">BUILT FOR A FULL DAY</h2>
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
+            Not a free day. Most training programs assume unlimited time. Timothenics doesn't.
           </p>
-          <div className="flex justify-center gap-6">
-            <a href="#" className="text-foreground hover:text-accent transition-colors">
-              <div className="w-12 h-12 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
-                <span className="text-xl font-bold">IG</span>
-              </div>
-            </a>
-            <a href="#" className="text-foreground hover:text-accent transition-colors">
-              <div className="w-12 h-12 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
-                <span className="text-xl font-bold">TT</span>
-              </div>
-            </a>
-            <a href="#" className="text-foreground hover:text-accent transition-colors">
-              <div className="w-12 h-12 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
-                <span className="text-xl font-bold">YT</span>
-              </div>
-            </a>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-accent transition-colors">
+            <h4 className="text-white mb-3 font-semibold">Full Calendar</h4>
+            <p className="text-foreground/60 text-sm">
+              Work, school, life. Your schedule is stacked, and that's not changing.
+            </p>
+          </div>
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-accent transition-colors">
+            <h4 className="text-white mb-3 font-semibold">No 90-Minute Splits</h4>
+            <p className="text-foreground/60 text-sm">
+              Traditional programs demand hours plus commute. That's a dealbreaker.
+            </p>
+          </div>
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-accent transition-colors">
+            <h4 className="text-white mb-3 font-semibold">30 Focused Minutes</h4>
+            <p className="text-foreground/60 text-sm">
+              Strip away the filler. Focus on what builds strength. Get in, work, get out.
+            </p>
+          </div>
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-accent transition-colors">
+            <h4 className="text-white mb-3 font-semibold">Clear Plan</h4>
+            <p className="text-foreground/60 text-sm">
+              No guesswork. Show up, follow the session, watch yourself get stronger.
+            </p>
           </div>
         </div>
       </Section>
+
+      {/* The 5-20-5 Framework */}
+      <Section className="bg-background-secondary">
+        <div className="text-center mb-16">
+          <h2 className="text-white mb-4">THE 5–20–5 FRAMEWORK</h2>
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
+            Every session follows the same efficient structure
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="text-center">
+            <div className="text-7xl font-bold text-accent mb-6">5</div>
+            <h3 className="text-white mb-3 font-semibold text-xl">Warm-Up</h3>
+            <p className="text-foreground/60">
+              Get joints mobile and muscles firing. Prepare for serious work.
+            </p>
+          </div>
+          <div className="text-center">
+            <div className="text-7xl font-bold text-accent mb-6">20</div>
+            <h3 className="text-white mb-3 font-semibold text-xl">Strength Work</h3>
+            <p className="text-foreground/60">
+              Push, pull, or legs focus. Progressive exercises that build real strength.
+            </p>
+          </div>
+          <div className="text-center">
+            <div className="text-7xl font-bold text-accent mb-6">5</div>
+            <h3 className="text-white mb-3 font-semibold text-xl">Core / Skill</h3>
+            <p className="text-foreground/60">
+              Targeted core work or skill practice. Lock in the session.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* Bottom Promo Bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-light border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between overflow-x-auto">
+          <div className="flex items-center space-x-12 text-dark">
+            <div className="flex items-center space-x-2 whitespace-nowrap">
+              <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+              <span className="text-xs font-medium uppercase tracking-wide">BUILT FOR PERFORMANCE</span>
+            </div>
+            <div className="flex items-center space-x-2 whitespace-nowrap">
+              <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+              <span className="text-xs font-medium uppercase tracking-wide">MINIMAL GEAR REQUIRED</span>
+            </div>
+            <div className="flex items-center space-x-2 whitespace-nowrap">
+              <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+              <span className="text-xs font-medium uppercase tracking-wide">30-MINUTE SYSTEMS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Add padding to prevent content being hidden by fixed promo bar */}
+      <div className="h-16"></div>
     </Layout>
   )
 }
