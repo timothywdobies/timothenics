@@ -68,76 +68,167 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Main Offerings - Clean Grid */}
-      <section className="py-24 md:py-32 bg-background-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-white mb-4">EVERYTHING YOU NEED</h2>
-            <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
-              Elite training systems, minimal gear, and apparel built for movement.
+      {/* Programs Section - Full Width */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image Placeholder */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/programs-bg.jpg)',
+            backgroundColor: '#1a1a1a',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-2xl">
+            <svg className="w-16 h-16 md:w-20 md:h-20 text-accent mb-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <h2 className="text-white mb-6">Programs</h2>
+            <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed">
+              Structured 30-minute sessions designed for real life. Progressive systems that build serious strength without your life revolving around training.
             </p>
+            <ul className="space-y-3 mb-10 text-foreground/70">
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Timothenics 30 - 8-week cycle, 4 sessions/week</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Push, pull, legs, and core progressions</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Home or park training, minimal equipment</span>
+              </li>
+            </ul>
+            <a
+              href="/programs"
+              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+            >
+              Explore Programs
+              <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Programs */}
-            <a href="/programs" className="group block">
-              <div className="relative overflow-hidden rounded-lg bg-background border border-white/10 hover:border-accent transition-all duration-300 h-full">
-                <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
-                  <span className="text-8xl">💪</span>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-white mb-3 uppercase">Programs</h3>
-                  <p className="text-foreground/60 mb-4">
-                    30-minute sessions. Progressive structure. Real strength.
-                  </p>
-                  <div className="flex items-center text-accent text-sm font-semibold uppercase tracking-wide group-hover:translate-x-2 transition-transform">
-                    Explore Programs
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </a>
+      {/* Equipment Section - Full Width */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image Placeholder */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/equipment-bg.jpg)',
+            backgroundColor: '#0f0f0f',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/60 to-black/40"></div>
+        </div>
 
-            {/* Equipment */}
-            <a href="/gear" className="group block">
-              <div className="relative overflow-hidden rounded-lg bg-background border border-white/10 hover:border-accent transition-all duration-300 h-full">
-                <div className="aspect-[4/3] bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center">
-                  <span className="text-8xl">🎯</span>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-white mb-3 uppercase">Equipment</h3>
-                  <p className="text-foreground/60 mb-4">
-                    Minimal tools that maximize results. Bands, sliders, parallettes.
-                  </p>
-                  <div className="flex items-center text-accent text-sm font-semibold uppercase tracking-wide group-hover:translate-x-2 transition-transform">
-                    Shop Equipment
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-2xl ml-auto">
+            <svg className="w-16 h-16 md:w-20 md:h-20 text-accent mb-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+            <h2 className="text-white mb-6">Equipment</h2>
+            <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed">
+              Minimal tools that maximize results. Bands, parallettes, sliders—everything you actually need, nothing you don't.
+            </p>
+            <ul className="space-y-3 mb-10 text-foreground/70">
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Resistance bands - 3 levels for progression</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Slider discs for any floor surface</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Portable, effective, built to last</span>
+              </li>
+            </ul>
+            <a
+              href="/gear"
+              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+            >
+              Shop Equipment
+              <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </a>
+          </div>
+        </div>
+      </section>
 
-            {/* Clothing */}
-            <a href="/clothing" className="group block">
-              <div className="relative overflow-hidden rounded-lg bg-background border border-white/10 hover:border-accent transition-all duration-300 h-full">
-                <div className="aspect-[4/3] bg-gradient-to-br from-foreground-muted/10 to-foreground-muted/5 flex items-center justify-center">
-                  <span className="text-8xl">👕</span>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-white mb-3 uppercase">Apparel</h3>
-                  <p className="text-foreground/60 mb-4">
-                    Training apparel designed for movement. Clean, functional design.
-                  </p>
-                  <div className="flex items-center text-foreground/40 text-sm font-semibold uppercase tracking-wide">
-                    Coming Soon
-                  </div>
-                </div>
-              </div>
-            </a>
+      {/* Apparel Section - Full Width */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image Placeholder */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/apparel-bg.jpg)',
+            backgroundColor: '#1a1a1a',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-2xl">
+            <svg className="w-16 h-16 md:w-20 md:h-20 text-accent mb-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+            <h2 className="text-white mb-6">Apparel</h2>
+            <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed">
+              Training apparel designed for movement. Minimal branding, maximum function. Clean design that performs.
+            </p>
+            <ul className="space-y-3 mb-10 text-foreground/70">
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Performance training tees and shorts</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Movement-focused fit, unrestricted range</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>Launching soon</span>
+              </li>
+            </ul>
+            <button
+              disabled
+              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-white/20 text-white/60 font-semibold text-sm uppercase tracking-wide cursor-not-allowed"
+            >
+              Coming Soon
+            </button>
           </div>
         </div>
       </section>
