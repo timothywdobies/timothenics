@@ -10,19 +10,22 @@ export default function Gear() {
   return (
     <Layout>
       {/* Page Header */}
-      <Section className="py-20 md:py-24 bg-gradient-to-b from-white to-background">
+      <Section className="py-20 md:py-24 bg-background">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="mb-6">Timothenics Gear</h1>
-          <p className="text-xl md:text-2xl text-foreground/80">
+          <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-gold mb-6">
+            TIMOTHENICS EQUIPMENT
+          </p>
+          <h1 className="mb-6 text-white">Training Gear</h1>
+          <p className="text-xl md:text-2xl text-foreground">
             Minimal tools for effective 30-minute sessions. Everything you need, nothing you don't.
           </p>
         </div>
       </Section>
 
       {/* Introduction */}
-      <Section>
+      <Section className="bg-background-secondary">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-lg md:text-xl text-foreground/80">
+          <p className="text-lg md:text-xl text-foreground-muted">
             You don't need a full gym to build serious strength. A pull-up bar, the floor, and a few smart accessories
             are enough to train push, pull, legs, and core. These tools make home or park sessions more versatile and progressive.
           </p>
@@ -30,125 +33,166 @@ export default function Gear() {
       </Section>
 
       {/* Product Cards */}
-      <Section className="bg-white" containerClassName="max-w-6xl">
+      <Section className="bg-background" containerClassName="max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Timothenics Starter Kit */}
-          <Card hover className="flex flex-col">
-            <div className="mb-4">
-              <div className="bg-accent/10 h-48 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-6xl text-accent">●●●</span>
-              </div>
-              <h3 className="mb-2">Timothenics Starter Kit</h3>
-              <p className="text-2xl font-bold text-accent mb-4">$49</p>
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105 group flex flex-col">
+            <div className="relative h-48 bg-background-panel flex items-center justify-center">
+              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
             </div>
 
-            <div className="mb-6 flex-grow">
-              <p className="text-foreground/80 mb-4">
-                Complete set of resistance bands and sliders. Everything you need to scale progressions,
-                add resistance, and train movements you can't do with bodyweight alone.
-              </p>
-
+            <div className="p-8 flex-grow flex flex-col">
               <div className="mb-4">
-                <h4 className="text-sm font-semibold mb-2">What's Included:</h4>
-                <ul className="space-y-1 text-sm text-foreground/70">
-                  <li>• 3 resistance bands (light, medium, heavy)</li>
-                  <li>• 2 slider discs for any floor surface</li>
-                  <li>• Mesh carry bag</li>
-                  <li>• Quick-start exercise guide</li>
-                </ul>
+                <h3 className="mb-2 text-white group-hover:text-gold transition-colors">Timothenics Starter Kit</h3>
+                <p className="text-2xl font-bold text-gold mb-4">$49</p>
               </div>
 
-              <div className="mb-4">
-                <h4 className="text-sm font-semibold mb-2">How It's Used in Timothenics 30:</h4>
-                <ul className="space-y-1 text-sm text-foreground/70">
-                  <li>• Assist pull-ups and dips as you build strength</li>
-                  <li>• Add resistance to push-ups and squats</li>
-                  <li>• Slider hamstring curls and core work</li>
-                  <li>• Scale movements to your current level</li>
-                </ul>
+              <div className="mb-6 flex-grow">
+                <p className="text-foreground-muted mb-4">
+                  Complete set of resistance bands and sliders. Everything you need to scale progressions,
+                  add resistance, and train movements you can't do with bodyweight alone.
+                </p>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-2 text-white">What's Included:</h4>
+                  <ul className="space-y-1 text-sm text-foreground-muted">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>3 resistance bands (light, medium, heavy)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>2 slider discs for any floor surface</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Mesh carry bag</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Quick-start exercise guide</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-auto">
+                <button className="w-full px-8 py-3 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+                  Add to Cart
+                </button>
               </div>
             </div>
-
-            <div className="mt-auto">
-              <Button className="w-full">Add to Cart</Button>
-            </div>
-          </Card>
+          </div>
 
           {/* Timothenics Parallettes */}
-          <Card hover className="flex flex-col">
-            <div className="mb-4">
-              <div className="bg-foreground/10 h-48 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-6xl text-foreground">∏∏</span>
-              </div>
-              <h3 className="mb-2">Timothenics Parallettes</h3>
-              <div className="mb-4">
-                <span className="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-semibold">
-                  Coming Soon
-                </span>
-              </div>
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105 group flex flex-col">
+            <div className="relative h-48 bg-background-panel flex items-center justify-center">
+              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+              </svg>
             </div>
 
-            <div className="mb-6 flex-grow">
-              <p className="text-foreground/80 mb-4">
-                Low-profile parallettes designed for home training. Elevate your push movements,
-                unlock L-sits, and build toward advanced skills like handstands and handstand push-ups.
-              </p>
-
+            <div className="p-8 flex-grow flex flex-col">
               <div className="mb-4">
-                <h4 className="text-sm font-semibold mb-2">Specs:</h4>
-                <ul className="space-y-1 text-sm text-foreground/70">
-                  <li>• 12" height, ideal for home ceilings</li>
-                  <li>• Non-slip rubber feet</li>
-                  <li>• Lightweight and portable</li>
-                  <li>• Supports 300+ lbs</li>
-                </ul>
+                <h3 className="mb-2 text-white group-hover:text-gold transition-colors">Timothenics Parallettes</h3>
+                <div className="mb-4">
+                  <span className="inline-block bg-gold/20 text-gold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
+                    Coming Soon
+                  </span>
+                </div>
               </div>
 
-              <div className="mb-4">
-                <h4 className="text-sm font-semibold mb-2">How It's Used in Timothenics 30:</h4>
-                <ul className="space-y-1 text-sm text-foreground/70">
-                  <li>• Deeper push-up range of motion</li>
-                  <li>• L-sit progressions for core</li>
-                  <li>• Elevated plank and pike variations</li>
-                  <li>• Foundation for handstand work</li>
-                </ul>
+              <div className="mb-6 flex-grow">
+                <p className="text-foreground-muted mb-4">
+                  Low-profile parallettes designed for home training. Elevate your push movements,
+                  unlock L-sits, and build toward advanced skills like handstands and handstand push-ups.
+                </p>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-2 text-white">Specs:</h4>
+                  <ul className="space-y-1 text-sm text-foreground-muted">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>12" height, ideal for home ceilings</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Non-slip rubber feet</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Lightweight and portable</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Supports 300+ lbs</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-auto">
+                <button disabled className="w-full px-8 py-3 rounded-full bg-gold/20 text-gold-light/80 font-semibold text-sm uppercase tracking-wide cursor-not-allowed">
+                  Notify When Available
+                </button>
               </div>
             </div>
-
-            <div className="mt-auto">
-              <Button variant="outline" className="w-full cursor-not-allowed opacity-50" onClick={(e) => e?.preventDefault()}>
-                Notify When Available
-              </Button>
-            </div>
-          </Card>
+          </div>
         </div>
       </Section>
 
       {/* What You Already Have */}
-      <Section
-        title="What You Already Have"
-        subtitle="Start training today with these basics"
-        dark
-      >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <div className="text-center">
-            <div className="text-5xl mb-4">▬</div>
-            <h4 className="mb-3">Pull-Up Bar</h4>
-            <p className="text-background/70">
+      <Section className="bg-background-secondary">
+        <div className="text-center mb-12">
+          <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-gold mb-4">
+            START TODAY
+          </p>
+          <h2 className="text-white mb-2">What You Already Have</h2>
+          <p className="text-foreground-muted">Start training today with these basics</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="text-center group">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 12H4" />
+            </svg>
+            <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">Pull-Up Bar</h4>
+            <p className="text-foreground-muted">
               Doorway bar, outdoor bar, or park equipment. All you need for pull, grip, and hanging work.
             </p>
           </div>
-          <div className="text-center">
-            <div className="text-5xl mb-4">▭</div>
-            <h4 className="mb-3">The Floor</h4>
-            <p className="text-background/70">
+          <div className="text-center group">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">The Floor</h4>
+            <p className="text-foreground-muted">
               Push-ups, planks, leg raises, bridges. Most of your training happens right here.
             </p>
           </div>
-          <div className="text-center">
-            <div className="text-5xl mb-4">⊡</div>
-            <h4 className="mb-3">A Clear Space</h4>
-            <p className="text-background/70">
+          <div className="text-center group">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+            </svg>
+            <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">A Clear Space</h4>
+            <p className="text-foreground-muted">
               About 6 feet by 3 feet. That's all. Train in your living room, bedroom, or backyard.
             </p>
           </div>
@@ -156,37 +200,40 @@ export default function Gear() {
       </Section>
 
       {/* Why Minimal Gear Works */}
-      <Section title="Why minimal gear works">
+      <Section className="bg-background">
+        <div className="text-center mb-12">
+          <h2 className="text-white">Why minimal gear works</h2>
+        </div>
         <div className="max-w-3xl mx-auto">
-          <Card>
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 md:p-12">
             <div className="space-y-6">
               <div>
-                <h4 className="mb-2">No Friction</h4>
-                <p className="text-foreground/70">
+                <h4 className="mb-2 text-white">No Friction</h4>
+                <p className="text-foreground-muted">
                   When your gym is wherever you are, there's no commute, no opening hours, no excuses.
                   You just start.
                 </p>
               </div>
               <div>
-                <h4 className="mb-2">Portable Training</h4>
-                <p className="text-foreground/70">
+                <h4 className="mb-2 text-white">Portable Training</h4>
+                <p className="text-foreground-muted">
                   Bands and sliders fit in a backpack. Take your training to the park, on trips, or anywhere with a bar.
                 </p>
               </div>
               <div>
-                <h4 className="mb-2">Focus on Fundamentals</h4>
-                <p className="text-foreground/70">
+                <h4 className="mb-2 text-white">Focus on Fundamentals</h4>
+                <p className="text-foreground-muted">
                   Less gear means more focus on progressive overload, form, and consistency—the things that actually build strength.
                 </p>
               </div>
               <div>
-                <h4 className="mb-2">One-Time Investment</h4>
-                <p className="text-foreground/70">
+                <h4 className="mb-2 text-white">One-Time Investment</h4>
+                <p className="text-foreground-muted">
                   No monthly gym fees. Get the basics once, train for years. The return on investment is unbeatable.
                 </p>
               </div>
             </div>
-          </Card>
+          </div>
         </div>
       </Section>
     </Layout>

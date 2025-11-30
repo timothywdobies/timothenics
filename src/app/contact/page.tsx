@@ -93,24 +93,27 @@ export default function Contact() {
   return (
     <Layout>
       {/* Page Header */}
-      <Section className="py-20 md:py-24 bg-gradient-to-b from-white to-background">
+      <Section className="py-20 md:py-24 bg-background">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="mb-6">Need help fitting Timothenics into your week?</h1>
-          <p className="text-xl md:text-2xl text-foreground/80">
+          <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-gold mb-6">
+            GET IN TOUCH
+          </p>
+          <h1 className="mb-6 text-white">Need help fitting Timothenics into your week?</h1>
+          <p className="text-xl md:text-2xl text-foreground">
             Tell us about your schedule, equipment, and goals. We'll help you figure out the best approach.
           </p>
         </div>
       </Section>
 
       {/* Contact Form */}
-      <Section>
+      <Section className="bg-background-secondary">
         <div className="max-w-2xl mx-auto">
-          <Card>
+          <div className="bg-background border border-white/10 rounded-lg p-8 md:p-12">
             <form onSubmit={handleSubmit}>
               <div className="space-y-6">
                 {/* Name Field */}
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold mb-2 text-white">
                     Name
                   </label>
                   <input
@@ -120,10 +123,10 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     className={`
-                      w-full px-4 py-3 rounded-lg border-2 transition-colors
+                      w-full px-4 py-3 rounded-lg border-2 transition-colors bg-background-panel text-white placeholder-foreground-muted/50
                       ${errors.name
                         ? 'border-red-500 focus:border-red-500'
-                        : 'border-foreground/20 focus:border-accent'
+                        : 'border-white/20 focus:border-gold'
                       }
                       focus:outline-none text-base
                     `}
@@ -136,7 +139,7 @@ export default function Contact() {
 
                 {/* Email Field */}
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold mb-2 text-white">
                     Email
                   </label>
                   <input
@@ -146,10 +149,10 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     className={`
-                      w-full px-4 py-3 rounded-lg border-2 transition-colors
+                      w-full px-4 py-3 rounded-lg border-2 transition-colors bg-background-panel text-white placeholder-foreground-muted/50
                       ${errors.email
                         ? 'border-red-500 focus:border-red-500'
-                        : 'border-foreground/20 focus:border-accent'
+                        : 'border-white/20 focus:border-gold'
                       }
                       focus:outline-none text-base
                     `}
@@ -162,7 +165,7 @@ export default function Contact() {
 
                 {/* Message Field */}
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold mb-2">
+                  <label htmlFor="message" className="block text-sm font-semibold mb-2 text-white">
                     Message
                   </label>
                   <textarea
@@ -172,10 +175,10 @@ export default function Contact() {
                     onChange={handleChange}
                     rows={6}
                     className={`
-                      w-full px-4 py-3 rounded-lg border-2 transition-colors resize-none
+                      w-full px-4 py-3 rounded-lg border-2 transition-colors resize-none bg-background-panel text-white placeholder-foreground-muted/50
                       ${errors.message
                         ? 'border-red-500 focus:border-red-500'
-                        : 'border-foreground/20 focus:border-accent'
+                        : 'border-white/20 focus:border-gold'
                       }
                       focus:outline-none text-base
                     `}
@@ -187,63 +190,67 @@ export default function Contact() {
                 </div>
 
                 {/* Submit Button */}
-                <Button type="submit" className="w-full">
+                <button type="submit" className="w-full px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
                   Send Message
-                </Button>
+                </button>
               </div>
             </form>
-          </Card>
+          </div>
         </div>
       </Section>
 
       {/* Additional Info */}
-      <Section className="bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h3 className="mb-6">Common Questions</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-            <Card>
-              <h4 className="mb-2">How much space do I need?</h4>
-              <p className="text-foreground/70 text-sm">
+      <Section className="bg-background">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h3 className="text-white mb-2">Common Questions</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+              <h4 className="mb-2 text-white">How much space do I need?</h4>
+              <p className="text-foreground-muted text-sm">
                 About 6 feet by 3 feet of clear floor space. Enough to do a push-up and have arm clearance
                 for a pull-up bar.
               </p>
-            </Card>
+            </div>
 
-            <Card>
-              <h4 className="mb-2">What if I can't do pull-ups yet?</h4>
-              <p className="text-foreground/70 text-sm">
+            <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+              <h4 className="mb-2 text-white">What if I can't do pull-ups yet?</h4>
+              <p className="text-foreground-muted text-sm">
                 That's exactly what progressions are for. Start with band-assisted pull-ups or negatives.
                 The program meets you where you are.
               </p>
-            </Card>
+            </div>
 
-            <Card>
-              <h4 className="mb-2">Can I train more than 4 days a week?</h4>
-              <p className="text-foreground/70 text-sm">
+            <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+              <h4 className="mb-2 text-white">Can I train more than 4 days a week?</h4>
+              <p className="text-foreground-muted text-sm">
                 You can, but the program is designed for 4 sessions. More isn't always better. Recovery
                 matters as much as training.
               </p>
-            </Card>
+            </div>
 
-            <Card>
-              <h4 className="mb-2">What if I miss a session?</h4>
-              <p className="text-foreground/70 text-sm">
+            <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+              <h4 className="mb-2 text-white">What if I miss a session?</h4>
+              <p className="text-foreground-muted text-sm">
                 Just pick up where you left off. Don't try to "make up" sessions. Consistency over weeks
                 matters more than perfection.
               </p>
-            </Card>
+            </div>
           </div>
         </div>
       </Section>
 
       {/* CTA */}
-      <Section dark>
+      <Section className="bg-background-secondary">
         <div className="text-center max-w-3xl mx-auto">
-          <h3 className="mb-4">Not sure if Timothenics is right for you?</h3>
-          <p className="text-xl text-background/80 mb-8">
+          <h3 className="mb-4 text-white">Not sure if Timothenics is right for you?</h3>
+          <p className="text-xl text-foreground-muted mb-8">
             Get the free 7-Day Start plan and see how 30-minute sessions fit into your actual life.
           </p>
-          <Button href="/#free-plan">Get the Free 7-Day Plan</Button>
+          <a href="/#free-plan" className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+            Get the Free 7-Day Plan
+          </a>
         </div>
       </Section>
     </Layout>

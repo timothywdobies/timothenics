@@ -31,7 +31,7 @@
     @apply text-base md:text-lg leading-relaxed;
   }
 
-  /* Custom scrollbar for dark theme */
+  /* Custom scrollbar with gold accent */
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -41,11 +41,11 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #0066FF;
+    background: linear-gradient(180deg, #F4D03F 0%, #D4AF37 100%);
     border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #0052CC;
+    background: linear-gradient(180deg, #FFE55C 0%, #F4D03F 100%);
   }
 }
