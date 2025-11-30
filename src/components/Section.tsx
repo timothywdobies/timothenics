@@ -3,6 +3,7 @@ import Container from './Container'
 
 interface SectionProps {
   children: React.ReactNode
+  id?: string
   title?: string
   subtitle?: string
   className?: string
@@ -12,6 +13,7 @@ interface SectionProps {
 
 export default function Section({
   children,
+  id,
   title,
   subtitle,
   className = '',
@@ -19,7 +21,7 @@ export default function Section({
   dark = false
 }: SectionProps) {
   return (
-    <section className={`py-16 md:py-24 ${dark ? 'bg-foreground text-background' : ''} ${className}`}>
+    <section id={id} className={`py-16 md:py-24 ${dark ? 'bg-foreground text-background' : ''} ${className}`}>
       <Container className={containerClassName}>
         {(title || subtitle) && (
           <div className="text-center mb-12 md:mb-16">
