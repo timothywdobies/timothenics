@@ -18,20 +18,36 @@ export default function Home() {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <Section className="py-20 md:py-32 bg-gradient-to-b from-white to-background">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="mb-6">Best shape of your life, 30 minutes at a time.</h1>
-          <p className="text-xl md:text-2xl mb-10 text-foreground/80 max-w-3xl mx-auto">
-            Build strength and unlock your body's full potential with efficient 30-minute calisthenics sessions.
-            Designed for stacked schedules. Train at home or at a park with minimal gear.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="#free-plan">Get the Free 7-Day Plan</Button>
-            <Button href="/programs" variant="secondary">See Timothenics 30</Button>
+      {/* Hero Section with Background Image */}
+      <section className="relative py-32 md:py-48 overflow-hidden">
+        {/* Background Image - Replace /hero-image.jpg with your actual image path */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/hero-image.jpg)',
+          }}
+        >
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/60 to-foreground/80"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="mb-6 text-white drop-shadow-lg">
+              Best shape of your life, 30 minutes at a time.
+            </h1>
+            <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto drop-shadow-md">
+              Build strength and unlock your body's full potential with efficient 30-minute calisthenics sessions.
+              Designed for stacked schedules. Train at home or at a park with minimal gear.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button href="#free-plan">Get the Free 7-Day Plan</Button>
+              <Button href="/programs" variant="secondary">See Timothenics 30</Button>
+            </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Built for Busy People */}
       <Section
