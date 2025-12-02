@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-18 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-gold flex items-center justify-center">
+            <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
               <span className="text-gold font-bold text-xl md:text-2xl">T</span>
             </div>
             <span className="ml-3 text-lg md:text-xl font-bold text-foreground uppercase tracking-wide">
