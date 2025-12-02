@@ -38,50 +38,40 @@ export default function Home() {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
-        {/* Background Image with Parallax */}
+      {/* Hero Section - Full Screen */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image - Handstand at Sunset */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/hero-image.jpg)',
-            backgroundColor: '#0a0a0a',
-            transform: 'scale(1.1)',
+            backgroundImage: 'url(/hero-handstand.png)',
+            backgroundPosition: 'center center',
           }}
         >
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90"></div>
-          {/* Noise Texture */}
-          <div className="absolute inset-0 noise"></div>
+          {/* Subtle Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
         </div>
 
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-gold/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-white tracking-tight animate-fade-in-up">
-            Join Timothenics for <span className="gradient-text text-shadow-gold">$1</span>.
+        {/* Content Positioned in Upper Area */}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center -mt-32">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-white tracking-tight animate-fade-in-up text-shadow drop-shadow-2xl">
+            Join Timothenics for <span className="text-white">$1</span>
           </h1>
-          <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            Timothenics turns four 30-minute calisthenics sessions a week into a level system you unlock like a game. Push, Pull, Legs, and Skills—each with clear standards, levels, and skills you earn over time.
+          <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-medium drop-shadow-lg" style={{ animationDelay: '0.1s', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
+            Four 30-minute sessions a week. Level-based progression. Unlock skills like handstands, pull-ups, and advanced calisthenics moves.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <a
               href="#free-plan"
-              className="group relative inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 overflow-hidden"
+              className="group relative inline-flex items-center justify-center px-12 py-5 rounded-full bg-white/95 backdrop-blur-sm text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-2xl hover:shadow-2xl hover:scale-105 hover:bg-white overflow-hidden"
             >
               <span className="relative z-10">Get the Free 7-Day Plan</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-white via-gray-100 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
               href="/programs"
-              className="group relative inline-flex items-center justify-center px-10 py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-semibold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow hover:shadow-glow-lg hover:scale-105 overflow-hidden"
+              className="group relative inline-flex items-center justify-center px-12 py-5 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow-lg hover:shadow-glow-lg hover:scale-105 overflow-hidden"
             >
               <span className="relative z-10">See Timothenics 30</span>
               <div className="absolute inset-0 bg-shimmer animate-shimmer"></div>
