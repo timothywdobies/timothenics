@@ -35,19 +35,19 @@ export default function Programs() {
           <div className="bg-background border border-white/10 rounded-lg p-8 md:p-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 text-center">
               <div className="group">
-                <div className="text-4xl font-bold text-gold mb-2 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">8</div>
+                <div className="text-4xl font-bold text-gold mb-2 transition-all duration-300 group-hover:text-gold-light">8</div>
                 <p className="text-sm text-foreground-muted">Weeks</p>
               </div>
               <div className="group">
-                <div className="text-4xl font-bold text-gold mb-2 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">4</div>
+                <div className="text-4xl font-bold text-gold mb-2 transition-all duration-300 group-hover:text-gold-light">4</div>
                 <p className="text-sm text-foreground-muted">Sessions per Week</p>
               </div>
               <div className="group">
-                <div className="text-4xl font-bold text-gold mb-2 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">~30</div>
+                <div className="text-4xl font-bold text-gold mb-2 transition-all duration-300 group-hover:text-gold-light">~30</div>
                 <p className="text-sm text-foreground-muted">Minutes per Session</p>
               </div>
               <div className="group">
-                <div className="text-4xl font-bold text-gold mb-2 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">Min</div>
+                <div className="text-4xl font-bold text-gold mb-2 transition-all duration-300 group-hover:text-gold-light">Min</div>
                 <p className="text-sm text-foreground-muted">Gear Required</p>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function Programs() {
             </div>
 
             <div className="text-center">
-              <button className="px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+              <button className="px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg">
                 Get Timothenics 30
               </button>
             </div>
@@ -160,7 +160,7 @@ export default function Programs() {
           <p className="text-foreground-muted">Different goals and experience levels</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <div className="mb-6">
               <span className="inline-block bg-gold/20 text-gold px-3 py-1 rounded-full text-xs font-semibold mb-4 uppercase tracking-wide">
                 Coming Soon
@@ -199,7 +199,7 @@ export default function Programs() {
             </ul>
           </div>
 
-          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <div className="mb-6">
               <span className="inline-block bg-gold/20 text-gold px-3 py-1 rounded-full text-xs font-semibold mb-4 uppercase tracking-wide">
                 Coming Soon

@@ -11,8 +11,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full border-2 border-accent flex items-center justify-center">
-                <span className="text-accent font-bold text-xl">T</span>
+              <div className="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center">
+                <span className="text-gold font-bold text-xl">T</span>
               </div>
               <span className="ml-3 text-xl font-bold uppercase tracking-wide">
                 Timothenics
@@ -26,21 +26,21 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide">Navigate</h4>
             <ul className="space-y-3">
-              <li><Link href="/programs" className="text-foreground/60 hover:text-accent transition-colors text-sm">Programs</Link></li>
-              <li><Link href="/gear" className="text-foreground/60 hover:text-accent transition-colors text-sm">Equipment</Link></li>
-              <li><Link href="/clothing" className="text-foreground/60 hover:text-accent transition-colors text-sm">Apparel</Link></li>
-              <li><Link href="/method" className="text-foreground/60 hover:text-accent transition-colors text-sm">Method</Link></li>
-              <li><Link href="/about" className="text-foreground/60 hover:text-accent transition-colors text-sm">About</Link></li>
+              <li><Link href="/programs" className="text-foreground/60 hover:text-gold transition-colors text-sm">Programs</Link></li>
+              <li><Link href="/gear" className="text-foreground/60 hover:text-gold transition-colors text-sm">Equipment</Link></li>
+              <li><Link href="/clothing" className="text-foreground/60 hover:text-gold transition-colors text-sm">Apparel</Link></li>
+              <li><Link href="/method" className="text-foreground/60 hover:text-gold transition-colors text-sm">Method</Link></li>
+              <li><Link href="/about" className="text-foreground/60 hover:text-gold transition-colors text-sm">About</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide">Connect</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-foreground/60 hover:text-accent transition-colors text-sm">Instagram</a></li>
-              <li><a href="#" className="text-foreground/60 hover:text-accent transition-colors text-sm">TikTok</a></li>
-              <li><a href="#" className="text-foreground/60 hover:text-accent transition-colors text-sm">YouTube</a></li>
-              <li><Link href="/contact" className="text-foreground/60 hover:text-accent transition-colors text-sm">Contact</Link></li>
+              <li><a href="#" className="text-foreground/60 hover:text-gold transition-colors text-sm">Instagram</a></li>
+              <li><a href="#" className="text-foreground/60 hover:text-gold transition-colors text-sm">TikTok</a></li>
+              <li><a href="#" className="text-foreground/60 hover:text-gold transition-colors text-sm">YouTube</a></li>
+              <li><Link href="/contact" className="text-foreground/60 hover:text-gold transition-colors text-sm">Contact</Link></li>
             </ul>
           </div>
         </div>

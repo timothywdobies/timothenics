@@ -24,8 +24,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-18 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-accent flex items-center justify-center">
-              <span className="text-accent font-bold text-xl md:text-2xl">T</span>
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-gold flex items-center justify-center">
+              <span className="text-gold font-bold text-xl md:text-2xl">T</span>
             </div>
             <span className="ml-3 text-lg md:text-xl font-bold text-foreground uppercase tracking-wide">
               Timothenics
@@ -53,17 +53,17 @@ export default function Navbar() {
 
           {/* Right Icons */}
           <div className="hidden md:flex items-center space-x-6">
-            <button className="text-foreground hover:text-accent transition-colors">
+            <button className="text-foreground hover:text-gold transition-colors">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
-            <button className="text-foreground hover:text-accent transition-colors">
+            <button className="text-foreground hover:text-gold transition-colors">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
             </button>
-            <button className="text-foreground hover:text-accent transition-colors">
+            <button className="text-foreground hover:text-gold transition-colors">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>

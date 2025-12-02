@@ -190,7 +190,7 @@ export default function Contact() {
                 </div>
 
                 {/* Submit Button */}
-                <button type="submit" className="w-full px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+                <button type="submit" className="w-full px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg">
                   Send Message
                 </button>
               </div>
@@ -248,7 +248,7 @@ export default function Contact() {
           <p className="text-xl text-foreground-muted mb-8">
             Get the free 7-Day Start plan and see how 30-minute sessions fit into your actual life.
           </p>
-          <a href="/#free-plan" className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+          <a href="/#free-plan" className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg">
             Get the Free 7-Day Plan
           </a>
         </div>

@@ -30,7 +30,7 @@ export default function About() {
               {/* Placeholder for founder photo */}
               <div className="bg-background-panel border border-white/10 rounded-xl h-96 flex items-center justify-center overflow-hidden group">
                 <div className="text-center">
-                  <svg className="w-24 h-24 text-gold/50 mx-auto mb-4 transition-all duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-24 h-24 text-gold/50 mx-auto mb-4 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                   <p className="text-foreground-muted">Photo: Training in action</p>
@@ -170,7 +170,7 @@ export default function About() {
           <h2 className="text-white">What We Believe</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Efficiency Over Volume</h4>
             <p className="text-foreground-muted">
               More time doesn't mean better results. Focused 30-minute sessions beat distracted 2-hour workouts
@@ -178,7 +178,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Progression Over Randomness</h4>
             <p className="text-foreground-muted">
               Clear progression paths beat "muscle confusion." You get stronger by doing harder variations,
@@ -186,28 +186,28 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Consistency Over Perfection</h4>
             <p className="text-foreground-muted">
               Four good sessions beat zero perfect ones. The program you follow is better than the program you skip.
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Fundamentals Over Complexity</h4>
             <p className="text-foreground-muted">
               Push, pull, legs, core. Master the basics before chasing advanced skills. Strong fundamentals unlock everything.
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Minimal Gear, Maximum Results</h4>
             <p className="text-foreground-muted">
               A bar, the floor, and a few bands are enough. Expensive equipment doesn't build strength—progressive overload does.
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Honest Marketing</h4>
             <p className="text-foreground-muted">
               No 30-day transformations. No magic protocols. Just structured training, consistent effort, and real results
@@ -226,7 +226,7 @@ export default function About() {
             Timothenics 30 program.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/#free-plan" className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+            <a href="/#free-plan" className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg">
               Get the Free 7-Day Plan
             </a>
             <a href="/programs" className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-transparent border-2 border-white text-white font-semibold text-sm uppercase tracking-wide hover:bg-white hover:text-dark transition-all duration-300">

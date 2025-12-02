@@ -36,7 +36,7 @@ export default function Gear() {
       <Section className="bg-background" containerClassName="max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Timothenics Starter Kit */}
-          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105 group flex flex-col">
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
             <div className="relative h-48 bg-background-panel flex items-center justify-center">
               <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -87,7 +87,7 @@ export default function Gear() {
               </div>
 
               <div className="mt-auto">
-                <button className="w-full px-8 py-3 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+                <button className="w-full px-8 py-3 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg">
                   Add to Cart
                 </button>
               </div>
@@ -95,7 +95,7 @@ export default function Gear() {
           </div>
 
           {/* Timothenics Parallettes */}
-          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105 group flex flex-col">
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
             <div className="relative h-48 bg-background-panel flex items-center justify-center">
               <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
@@ -170,7 +170,7 @@ export default function Gear() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="text-center group">
-            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 12H4" />
             </svg>
             <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">Pull-Up Bar</h4>
@@ -179,7 +179,7 @@ export default function Gear() {
             </p>
           </div>
           <div className="text-center group">
-            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
             <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">The Floor</h4>
@@ -188,7 +188,7 @@ export default function Gear() {
             </p>
           </div>
           <div className="text-center group">
-            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
             </svg>
             <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">A Clear Space</h4>

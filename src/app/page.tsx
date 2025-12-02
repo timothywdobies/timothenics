@@ -22,7 +22,7 @@ export default function Home() {
       <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden group">
         {/* Background Image with parallax effect */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700"
           style={{
             backgroundImage: 'url(/hero-image.jpg)',
             backgroundColor: '#0a0a0a',
@@ -48,18 +48,18 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <a
               href="#free-plan"
-              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
+              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all duration-300 shadow-lg"
             >
-              <svg className="w-5 h-5 mr-3 transition-transform group-hover/btn:rotate-12" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 mr-3 " fill="currentColor" viewBox="0 0 24 24">
                 <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
               </svg>
               Get Free 7-Day Plan
             </a>
             <a
               href="/programs"
-              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-accent text-white font-semibold text-sm uppercase tracking-wide hover:bg-accent-hover transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
+              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-accent text-white font-semibold text-sm uppercase tracking-wide hover:bg-accent-hover transition-all duration-300 shadow-lg"
             >
-              <svg className="w-5 h-5 mr-3 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 mr-3 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
               See Timothenics 30
@@ -72,7 +72,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden group">
         {/* Background Image Placeholder with hover zoom */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700"
           style={{
             backgroundImage: 'url(/programs-bg.jpg)',
             backgroundColor: '#0a0a0a',
@@ -83,8 +83,8 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-2xl transform transition-all duration-500 group-hover:translate-x-4">
-            <svg className="w-16 h-16 md:w-20 md:h-20 text-gold mb-8 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="max-w-2xl transform transition-all duration-500">
+            <svg className="w-16 h-16 md:w-20 md:h-20 text-gold mb-8 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
             <h2 className="text-white mb-6 transition-colors duration-300 group-hover:text-gold">Programs</h2>
@@ -92,19 +92,19 @@ export default function Home() {
               Structured 30-minute sessions designed for real life. Progressive systems that build serious strength without your life revolving around training.
             </p>
             <ul className="space-y-3 mb-10 text-foreground-muted">
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Timothenics 30 - 8-week cycle, 4 sessions/week</span>
               </li>
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Push, pull, legs, and core progressions</span>
               </li>
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
@@ -113,7 +113,7 @@ export default function Home() {
             </ul>
             <a
               href="/programs"
-              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
+              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all duration-300 shadow-lg"
             >
               Explore Programs
               <svg className="w-5 h-5 ml-3 transition-transform duration-300 group-hover/btn:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -128,7 +128,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden group">
         {/* Background Image Placeholder with hover zoom */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700"
           style={{
             backgroundImage: 'url(/equipment-bg.jpg)',
             backgroundColor: '#0a0a0a',
@@ -139,8 +139,8 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-2xl ml-auto transform transition-all duration-500 group-hover:translate-x-4">
-            <svg className="w-16 h-16 md:w-20 md:h-20 text-gold mb-8 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="max-w-2xl ml-auto transform transition-all duration-500">
+            <svg className="w-16 h-16 md:w-20 md:h-20 text-gold mb-8 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
             <h2 className="text-white mb-6 transition-colors duration-300 group-hover:text-gold">Equipment</h2>
@@ -148,19 +148,19 @@ export default function Home() {
               Minimal tools that maximize results. Bands, parallettes, sliders—everything you actually need, nothing you don't.
             </p>
             <ul className="space-y-3 mb-10 text-foreground-muted">
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Resistance bands - 3 levels for progression</span>
               </li>
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Slider discs for any floor surface</span>
               </li>
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
@@ -169,7 +169,7 @@ export default function Home() {
             </ul>
             <a
               href="/gear"
-              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
+              className="group/btn inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gray-100 transition-all duration-300 shadow-lg"
             >
               Shop Equipment
               <svg className="w-5 h-5 ml-3 transition-transform duration-300 group-hover/btn:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -184,7 +184,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden group">
         {/* Background Image Placeholder with hover zoom */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700"
           style={{
             backgroundImage: 'url(/apparel-bg.jpg)',
             backgroundColor: '#0a0a0a',
@@ -195,8 +195,8 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-2xl transform transition-all duration-500 group-hover:translate-x-4">
-            <svg className="w-16 h-16 md:w-20 md:h-20 text-gold mb-8 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="max-w-2xl transform transition-all duration-500">
+            <svg className="w-16 h-16 md:w-20 md:h-20 text-gold mb-8 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
             </svg>
             <h2 className="text-white mb-6 transition-colors duration-300 group-hover:text-gold">Apparel</h2>
@@ -204,19 +204,19 @@ export default function Home() {
               Training apparel designed for movement. Minimal branding, maximum function. Clean design that performs.
             </p>
             <ul className="space-y-3 mb-10 text-foreground-muted">
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Performance training tees and shorts</span>
               </li>
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <span>Movement-focused fit, unrestricted range</span>
               </li>
-              <li className="flex items-start transition-all duration-300 hover:translate-x-2 hover:text-white">
+              <li className="flex items-start transition-all duration-300 hover:text-white">
                 <svg className="w-5 h-5 text-gold mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
@@ -246,25 +246,25 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="text-white mb-3 font-semibold group-hover:text-gold transition-colors">Full Calendar</h4>
             <p className="text-foreground-muted text-sm">
               Work, school, life. Your schedule is stacked, and that's not changing.
             </p>
           </div>
-          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="text-white mb-3 font-semibold group-hover:text-gold transition-colors">No 90-Minute Splits</h4>
             <p className="text-foreground-muted text-sm">
               Traditional programs demand hours plus commute. That's a dealbreaker.
             </p>
           </div>
-          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="text-white mb-3 font-semibold group-hover:text-gold transition-colors">30 Focused Minutes</h4>
             <p className="text-foreground-muted text-sm">
               Strip away the filler. Focus on what builds strength. Get in, work, get out.
             </p>
           </div>
-          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="text-white mb-3 font-semibold group-hover:text-gold transition-colors">Clear Plan</h4>
             <p className="text-foreground-muted text-sm">
               No guesswork. Show up, follow the session, watch yourself get stronger.
@@ -287,21 +287,21 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="text-center group">
-            <div className="text-7xl font-bold text-gold mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">5</div>
+            <div className="text-7xl font-bold text-gold mb-6 transition-all duration-300 group-hover:text-gold-light">5</div>
             <h3 className="text-white mb-3 font-semibold text-xl group-hover:text-gold transition-colors">Warm-Up</h3>
             <p className="text-foreground-muted">
               Get joints mobile and muscles firing. Prepare for serious work.
             </p>
           </div>
           <div className="text-center group">
-            <div className="text-7xl font-bold text-gold mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">20</div>
+            <div className="text-7xl font-bold text-gold mb-6 transition-all duration-300 group-hover:text-gold-light">20</div>
             <h3 className="text-white mb-3 font-semibold text-xl group-hover:text-gold transition-colors">Strength Work</h3>
             <p className="text-foreground-muted">
               Push, pull, or legs focus. Progressive exercises that build real strength.
             </p>
           </div>
           <div className="text-center group">
-            <div className="text-7xl font-bold text-gold mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">5</div>
+            <div className="text-7xl font-bold text-gold mb-6 transition-all duration-300 group-hover:text-gold-light">5</div>
             <h3 className="text-white mb-3 font-semibold text-xl group-hover:text-gold transition-colors">Core / Skill</h3>
             <p className="text-foreground-muted">
               Targeted core work or skill practice. Lock in the session.
@@ -315,19 +315,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between overflow-x-auto">
           <div className="flex items-center space-x-12 text-foreground">
             <div className="flex items-center space-x-2 whitespace-nowrap group">
-              <svg className="w-4 h-4 text-gold transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 text-gold transition-transform" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
               <span className="text-xs font-medium uppercase tracking-wide group-hover:text-gold transition-colors">BUILT FOR PERFORMANCE</span>
             </div>
             <div className="flex items-center space-x-2 whitespace-nowrap group">
-              <svg className="w-4 h-4 text-gold transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 text-gold transition-transform" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
               <span className="text-xs font-medium uppercase tracking-wide group-hover:text-gold transition-colors">MINIMAL GEAR REQUIRED</span>
             </div>
             <div className="flex items-center space-x-2 whitespace-nowrap group">
-              <svg className="w-4 h-4 text-gold transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 text-gold transition-transform" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
               <span className="text-xs font-medium uppercase tracking-wide group-hover:text-gold transition-colors">30-MINUTE SYSTEMS</span>

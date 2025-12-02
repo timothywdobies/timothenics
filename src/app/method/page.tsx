@@ -54,7 +54,7 @@ export default function Method() {
         <div className="max-w-5xl mx-auto space-y-8">
           <div className="bg-background-secondary border border-white/10 rounded-lg p-8 md:p-12 hover:border-gold transition-all duration-300 group">
             <div className="flex items-start">
-              <div className="text-5xl font-bold text-gold mr-6 flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">5</div>
+              <div className="text-5xl font-bold text-gold mr-6 flex-shrink-0 transition-all duration-300 group-hover:text-gold-light">5</div>
               <div>
                 <h3 className="mb-3 text-white group-hover:text-gold transition-colors">Warm-Up & Activation</h3>
                 <p className="text-foreground-muted mb-3">
@@ -70,7 +70,7 @@ export default function Method() {
 
           <div className="bg-background-secondary border border-white/10 rounded-lg p-8 md:p-12 hover:border-gold transition-all duration-300 group">
             <div className="flex items-start">
-              <div className="text-5xl font-bold text-gold mr-6 flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">20</div>
+              <div className="text-5xl font-bold text-gold mr-6 flex-shrink-0 transition-all duration-300 group-hover:text-gold-light">20</div>
               <div>
                 <h3 className="mb-3 text-white group-hover:text-gold transition-colors">Main Strength Work</h3>
                 <p className="text-foreground-muted mb-3">
@@ -90,7 +90,7 @@ export default function Method() {
 
           <div className="bg-background-secondary border border-white/10 rounded-lg p-8 md:p-12 hover:border-gold transition-all duration-300 group">
             <div className="flex items-start">
-              <div className="text-5xl font-bold text-gold mr-6 flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light">5</div>
+              <div className="text-5xl font-bold text-gold mr-6 flex-shrink-0 transition-all duration-300 group-hover:text-gold-light">5</div>
               <div>
                 <h3 className="mb-3 text-white group-hover:text-gold transition-colors">Core or Skill Finisher</h3>
                 <p className="text-foreground-muted mb-3">
@@ -244,7 +244,7 @@ export default function Method() {
           <h2 className="text-white">Why This Works</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Consistency beats intensity</h4>
             <p className="text-foreground-muted">
               Four 30-minute sessions you actually complete beat the perfect 90-minute workout you keep skipping.
@@ -252,7 +252,7 @@ export default function Method() {
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Structure removes decisions</h4>
             <p className="text-foreground-muted">
               You don't show up and wonder what to do. You follow the session, hit your reps, and you're done.
@@ -260,7 +260,7 @@ export default function Method() {
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Progressive overload is simple</h4>
             <p className="text-foreground-muted">
               More reps, harder variation, or less assistance. The progression is built in. You just follow
@@ -268,7 +268,7 @@ export default function Method() {
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300 group">
             <h4 className="mb-3 text-white group-hover:text-gold transition-colors">Minimal gear means minimal friction</h4>
             <p className="text-foreground-muted">
               No commute, no membership fees, no waiting for equipment. Your gym is wherever you are.

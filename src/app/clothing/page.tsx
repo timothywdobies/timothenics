@@ -36,11 +36,11 @@ export default function Clothing() {
       <Section className="bg-background" containerClassName="max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Training Tee */}
-          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group">
             <div className="relative h-80 bg-background-panel overflow-hidden">
               {/* Image Placeholder - Replace with actual image */}
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700"
                 style={{
                   backgroundImage: 'url(/clothing/training-tee.jpg)',
                   backgroundColor: '#0a0a0a',
@@ -96,11 +96,11 @@ export default function Clothing() {
           </div>
 
           {/* Training Shorts */}
-          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group">
             <div className="relative h-80 bg-background-panel overflow-hidden">
               {/* Image Placeholder - Replace with actual image */}
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700"
                 style={{
                   backgroundImage: 'url(/clothing/training-shorts.jpg)',
                   backgroundColor: '#0a0a0a',
@@ -156,11 +156,11 @@ export default function Clothing() {
           </div>
 
           {/* Performance Hoodie */}
-          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 hover:scale-105 group">
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group">
             <div className="relative h-80 bg-background-panel overflow-hidden">
               {/* Image Placeholder - Replace with actual image */}
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700"
                 style={{
                   backgroundImage: 'url(/clothing/performance-hoodie.jpg)',
                   backgroundColor: '#0a0a0a',
@@ -227,7 +227,7 @@ export default function Clothing() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="text-center group">
-            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
             <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">Performance First</h4>
@@ -236,7 +236,7 @@ export default function Clothing() {
             </p>
           </div>
           <div className="text-center group">
-            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
             </svg>
             <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">Minimal Design</h4>
@@ -245,7 +245,7 @@ export default function Clothing() {
             </p>
           </div>
           <div className="text-center group">
-            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:scale-110 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-16 h-16 text-gold mx-auto mb-6 transition-all duration-300 group-hover:text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
             </svg>
             <h4 className="mb-3 text-white font-semibold group-hover:text-gold transition-colors">Training Tested</h4>
@@ -282,7 +282,7 @@ export default function Clothing() {
                 />
                 <button
                   type="submit"
-                  className="px-8 py-3 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
+                  className="px-8 py-3 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg"
                 >
                   Notify Me
                 </button>
