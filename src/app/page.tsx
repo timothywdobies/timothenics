@@ -41,7 +41,7 @@ export default function Home() {
             Join Timothenics for <span className="text-gold">$1</span>
           </h1>
           <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto mb-10 leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Get your first month for just $1 and train alongside thousands building elite strength in 30-minute sessions.
+            Train alongside thousands building elite strength in 30-minute at home workouts.
           </p>
 
           {/* CTA Buttons */}
