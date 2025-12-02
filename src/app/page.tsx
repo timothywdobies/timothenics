@@ -35,7 +35,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight">
-            Best shape of your life, <span className="text-gold">30 minutes at a time.</span>
+            Join Timothenics for <span className="text-gold">$1</span>.
           </h1>
           <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
             Timothenics turns four 30-minute calisthenics sessions a week into a level system you unlock like a game. Push, Pull, Legs, and Skills—each with clear standards, levels, and skills you earn over time.
