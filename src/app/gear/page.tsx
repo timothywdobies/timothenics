@@ -19,8 +19,8 @@ export default function Gear() {
             backgroundPosition: 'center center',
           }}
         >
-          {/* Subtle Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/20 to-white/40"></div>
+          {/* Dark Overlay for White Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40"></div>
         </div>
 
         {/* Content */}
@@ -28,13 +28,13 @@ export default function Gear() {
           <p className="text-sm md:text-base font-bold tracking-widest uppercase text-gold mb-6 drop-shadow-lg animate-fade-in-up">
             TIMOTHENICS EQUIPMENT
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark tracking-tight animate-fade-in-up drop-shadow-lg" style={{ animationDelay: '0.1s' }}>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white tracking-tight animate-fade-in-up drop-shadow-2xl" style={{ animationDelay: '0.1s' }}>
             Timothenics Equipment
           </h1>
-          <p className="text-lg md:text-xl text-dark max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-semibold drop-shadow" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-semibold drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
             Minimal tools for effective 30-minute sessions. Everything you need, nothing you don't.
           </p>
-          <p className="text-base md:text-lg text-dark/80 max-w-3xl mx-auto leading-relaxed animate-fade-in-up font-medium" style={{ animationDelay: '0.3s' }}>
+          <p className="text-base md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed animate-fade-in-up font-medium drop-shadow-lg" style={{ animationDelay: '0.3s' }}>
             A pull-up bar, the floor, and a few smart accessories are enough to train push, pull, legs, and core.
           </p>
         </div>
