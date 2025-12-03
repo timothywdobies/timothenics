@@ -55,8 +55,8 @@ export default function Clothing() {
               >
                 {/* Product card - tall vertical rectangle */}
                 <div className="relative aspect-[3/4] bg-[#f6f6f6] rounded-lg overflow-hidden flex items-center justify-center p-8">
-                  {/* Show actual image for Training Tee, placeholder for others */}
-                  {product.id === 1 ? (
+                  {/* Show actual images for products with photos, placeholder for others */}
+                  {product.id === 1 || product.id === 3 ? (
                     <img
                       src={product.image}
                       alt={product.name}
