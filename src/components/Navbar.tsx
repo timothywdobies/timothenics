@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/clothing', label: 'APPAREL' },
   { href: '/method', label: 'METHOD' },
   { href: '/about', label: 'ABOUT' },
+  { href: '/app', label: 'APP' },
   { href: '/contact', label: 'CONTACT' },
 ]
 
