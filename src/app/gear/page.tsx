@@ -9,28 +9,36 @@ import Card from '@/components/Card'
 export default function Gear() {
   return (
     <Layout>
-      {/* Page Header */}
-      <Section className="py-20 md:py-24 bg-background">
-        <div className="text-center max-w-3xl mx-auto">
-          <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-gold mb-6">
+      {/* Hero Section - Full Screen */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image - Parallettes */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/equipment-hero.png)',
+            backgroundPosition: 'center center',
+          }}
+        >
+          {/* Subtle Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/20 to-white/40"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm md:text-base font-bold tracking-widest uppercase text-gold mb-6 drop-shadow-lg animate-fade-in-up">
             TIMOTHENICS EQUIPMENT
           </p>
-          <h1 className="mb-6 text-white">Training Gear</h1>
-          <p className="text-xl md:text-2xl text-foreground">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-dark tracking-tight animate-fade-in-up drop-shadow-lg" style={{ animationDelay: '0.1s' }}>
+            Training Gear
+          </h1>
+          <p className="text-xl md:text-2xl text-dark max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-semibold drop-shadow" style={{ animationDelay: '0.2s' }}>
             Minimal tools for effective 30-minute sessions. Everything you need, nothing you don't.
           </p>
-        </div>
-      </Section>
-
-      {/* Introduction */}
-      <Section className="bg-background-secondary">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-lg md:text-xl text-foreground-muted">
-            You don't need a full gym to build serious strength. A pull-up bar, the floor, and a few smart accessories
-            are enough to train push, pull, legs, and core. These tools make home or park sessions more versatile and progressive.
+          <p className="text-lg md:text-xl text-dark/80 max-w-3xl mx-auto leading-relaxed animate-fade-in-up font-medium" style={{ animationDelay: '0.3s' }}>
+            A pull-up bar, the floor, and a few smart accessories are enough to train push, pull, legs, and core.
           </p>
         </div>
-      </Section>
+      </section>
 
       {/* Product Cards */}
       <Section className="bg-background" containerClassName="max-w-6xl">
