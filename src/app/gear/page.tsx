@@ -10,7 +10,7 @@ export default function Gear() {
   return (
     <Layout>
       {/* Hero Section - Extended to show full parallettes */}
-      <section className="relative min-h-[140vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[140vh] flex items-start justify-center overflow-hidden pt-32 md:pt-40">
         {/* Background Image - Parallettes */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
