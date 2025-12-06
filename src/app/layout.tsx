@@ -5,8 +5,30 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Timothenics | Best shape of your life, 30 minutes at a time',
-  description: '30-minute calisthenics systems for busy people who want to unlock their body\'s full potential with minimal gear.',
+  title: 'Timothenics',
+  description: 'Timothenics',
+  openGraph: {
+    title: 'Timothenics',
+    description: 'Timothenics',
+    url: 'https://timothenics.com',
+    siteName: 'Timothenics',
+    images: [
+      {
+        url: '/og-image.png', // TODO: Replace with custom Timothenics text image
+        width: 1200,
+        height: 630,
+        alt: 'Timothenics',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Timothenics',
+    description: 'Timothenics',
+    images: ['/og-image.png'], // TODO: Replace with custom Timothenics text image
+  },
 }
 
 export default function RootLayout({
