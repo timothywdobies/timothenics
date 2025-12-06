@@ -79,6 +79,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        'brand': ['Georgia', 'serif'],
       },
       letterSpacing: {
         'nav': '0.1em',

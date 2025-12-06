@@ -46,7 +46,7 @@ export default function Navbar() {
             <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
               <span className="text-gold font-bold text-xl md:text-2xl transition-all duration-300 group-hover:text-gold-light">T</span>
             </div>
-            <span className="ml-3 text-lg md:text-xl font-bold text-foreground uppercase tracking-wide transition-colors duration-300 group-hover:text-gold">
+            <span className="ml-3 text-lg md:text-xl font-bold text-foreground uppercase tracking-wide transition-colors duration-300 group-hover:text-gold font-brand">
               Timothenics
             </span>
           </Link>
