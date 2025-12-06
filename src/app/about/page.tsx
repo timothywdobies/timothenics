@@ -70,67 +70,6 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
-              <h4 className="mb-3 text-white">Who This Is For</h4>
-              <ul className="space-y-2 text-foreground-muted">
-                <li className="flex items-start">
-                  <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>People with full calendars who still want elite strength</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Anyone tired of programs that demand 90+ minutes</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Those who value efficiency and hate wasted time</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Anyone who's skipped workouts because they "didn't have enough time"</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
-              <h4 className="mb-3 text-white">Who This Isn't For</h4>
-              <ul className="space-y-2 text-foreground-muted">
-                <li className="flex items-start">
-                  <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  <span>People who want to spend hours in the gym</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  <span>Those seeking random "muscle confusion" workouts</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  <span>Anyone who needs complex equipment and machines</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  <span>People looking for shortcuts without consistent effort</span>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </Section>
 
