@@ -16,7 +16,7 @@ export default function AppDownloadSection() {
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto flex max-w-2xl items-center justify-center gap-6 px-4 py-16 md:py-20">
+      <div className="relative mx-auto flex max-w-2xl items-center justify-center gap-6 px-4 py-8 md:py-12">
         {/* Google Play button */}
         <a
           href="#" // TODO: Replace with actual Google Play Store URL

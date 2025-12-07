@@ -9,7 +9,7 @@ export default function App() {
   return (
     <Layout>
       {/* Coming Soon Hero */}
-      <Section className="bg-background py-32 md:py-40">
+      <Section className="bg-background py-12 md:py-16">
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
             <span className="inline-block bg-gold/20 text-gold px-6 py-2 rounded-full text-sm font-semibold uppercase tracking-wide animate-fade-in">
