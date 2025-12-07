@@ -58,7 +58,7 @@ export default function Home() {
             Master Bodyweight Strength
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-medium drop-shadow-lg" style={{ animationDelay: '0.1s', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
-            Master your bodyweight. Build real strength with minimal equipment, unlock skills like handstands and muscle-ups, and train anywhere, anytime.
+            Build real strength with minimal equipment, unlock skills like handstands and muscle-ups, and train anywhere, anytime.
           </p>
 
           {/* CTA Button */}
