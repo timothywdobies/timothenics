@@ -1,12 +1,11 @@
 'use client'
 
 import React from 'react'
-import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 
 export default function Programs() {
   return (
-    <Layout>
+    <>
       {/* Page Header */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
         {/* Background Image */}
@@ -313,6 +312,6 @@ export default function Programs() {
           </div>
         </div>
       </Section>
-    </Layout>
+    </>
   )
 }
