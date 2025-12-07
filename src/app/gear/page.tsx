@@ -25,10 +25,7 @@ export default function Gear() {
 
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm md:text-base font-bold tracking-widest uppercase text-gold mb-6 drop-shadow-lg animate-fade-in-up">
-            TIMOTHENICS EQUIPMENT
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white tracking-tight animate-fade-in-up drop-shadow-2xl" style={{ animationDelay: '0.1s' }}>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white tracking-tight animate-fade-in-up drop-shadow-2xl">
             Timothenics Equipment
           </h1>
           <p className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-semibold drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
