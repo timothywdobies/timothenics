@@ -234,11 +234,9 @@ export default function Programs() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-        </div>
-      </Section>
+        </Section>
 
       {/* Why This Works */}
       <Section className="bg-background">
