@@ -37,7 +37,7 @@ export default function Timothenics30() {
 
           <div className="glass-card p-10 max-w-md mx-auto">
             <div className="text-center mb-6">
-              <div className="text-5xl font-bold text-white mb-2">$1</div>
+              <div className="text-5xl font-bold text-white mb-2">$29</div>
               <p className="text-foreground-muted">Complete 8-week program</p>
             </div>
 
@@ -63,7 +63,7 @@ export default function Timothenics30() {
             </ul>
 
             <button className="w-full group relative inline-flex items-center justify-center px-10 py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow hover:shadow-glow-lg hover:scale-105 overflow-hidden">
-              <span className="relative z-10">Unlock Program for $1</span>
+              <span className="relative z-10">Unlock Program for $29</span>
               <div className="absolute inset-0 bg-shimmer animate-shimmer"></div>
             </button>
 
@@ -227,7 +227,7 @@ export default function Timothenics30() {
                   </div>
                   <h3 className="text-white text-2xl font-bold mb-4">Program Locked</h3>
                   <p className="text-foreground-muted mb-8">
-                    Unlock the complete 4-day workout program for just $1 and start your training today.
+                    Unlock the complete 4-day workout program for just $29 and start your training today.
                   </p>
                   <a
                     href="#pricing"
@@ -237,7 +237,7 @@ export default function Timothenics30() {
                     }}
                     className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow hover:shadow-glow-lg hover:scale-105"
                   >
-                    Unlock for $1
+                    Unlock for $29
                   </a>
                 </div>
               </div>
