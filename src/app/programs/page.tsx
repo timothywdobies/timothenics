@@ -9,13 +9,7 @@ export default function Programs() {
       {/* Page Header */}
       <Section className="py-20 md:py-24 bg-background">
         <div className="text-center max-w-3xl mx-auto">
-          <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-gold mb-6">
-            PROGRAMS
-          </p>
-          <h1 className="mb-6 text-white">Timothenics Programs</h1>
-          <p className="text-xl md:text-2xl text-foreground">
-            Level-based calisthenics systems built around four 30-minute sessions per week. Progress through clear standards and unlock new abilities.
-          </p>
+          <h1 className="text-white">Training Programs</h1>
         </div>
       </Section>
 
