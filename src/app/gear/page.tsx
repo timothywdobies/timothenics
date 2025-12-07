@@ -39,10 +39,12 @@ export default function Gear() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Timothenics Parallettes */}
           <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
-            <div className="relative h-48 bg-background-panel flex items-center justify-center">
-              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
-              </svg>
+            <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
+              <img
+                src="/parallettes.png"
+                alt="Timothenics Parallettes"
+                className="w-full h-full object-contain p-4"
+              />
             </div>
 
             <div className="p-8 flex-grow flex flex-col">
@@ -102,10 +104,12 @@ export default function Gear() {
 
           {/* Parallel Bars */}
           <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
-            <div className="relative h-48 bg-background-panel flex items-center justify-center">
-              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+            <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
+              <img
+                src="/parallel-bars.png"
+                alt="Parallel Bars"
+                className="w-full h-full object-contain p-4"
+              />
             </div>
 
             <div className="p-8 flex-grow flex flex-col">
@@ -164,10 +168,12 @@ export default function Gear() {
 
           {/* Resistance Bands */}
           <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
-            <div className="relative h-48 bg-background-panel flex items-center justify-center">
-              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+            <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
+              <img
+                src="/resistance-bands.png"
+                alt="Resistance Bands Set"
+                className="w-full h-full object-contain p-4"
+              />
             </div>
 
             <div className="p-8 flex-grow flex flex-col">
@@ -226,10 +232,12 @@ export default function Gear() {
 
           {/* Weight Vest */}
           <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
-            <div className="relative h-48 bg-background-panel flex items-center justify-center">
-              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+            <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
+              <img
+                src="/weight-vest.png"
+                alt="Adjustable Weight Vest"
+                className="w-full h-full object-contain p-4"
+              />
             </div>
 
             <div className="p-8 flex-grow flex flex-col">

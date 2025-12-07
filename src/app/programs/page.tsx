@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from '@/components/Layout'
 import Section from '@/components/Section'
-import Card from '@/components/Card'
 
 export default function Programs() {
   return (
     <Layout>
       {/* Page Header */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
         {/* Background Image */}
         <div
           className="absolute inset-0"
@@ -19,65 +18,168 @@ export default function Programs() {
           }}
         >
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
-          <h1 className="text-white drop-shadow-2xl">Training Programs</h1>
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-8">
+          <div className="mb-4">
+            <span className="text-sm font-medium tracking-[0.18em] uppercase text-gold">
+              TIMOTHENICS TRAINING
+            </span>
+          </div>
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white mb-4 drop-shadow-2xl">
+            Choose Your Program
+          </h1>
+          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+            Level-based calisthenics training. Clear standards, measurable progress, 30-minute sessions.
+          </p>
         </div>
       </section>
 
-      {/* Timothenics 30 - First Program Launch */}
+      {/* Programs Grid */}
+      <Section className="bg-background py-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            {/* Timothenics 30 - Main Program */}
+            <div className="bg-background-secondary border-2 border-gold rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+              <div className="p-8 md:p-10 flex-grow">
+                <div className="mb-6">
+                  <div className="inline-block bg-gold text-dark px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
+                    Most Popular
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Timothenics 30</h2>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-4xl font-bold text-gold">$29</span>
+                    <span className="text-foreground-muted">one-time payment</span>
+                  </div>
+                  <p className="text-lg text-foreground-muted">
+                    8-week level-based program. Four 30-minute sessions per week. Progress through Beginner, Intermediate, and Advanced levels.
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">4 training tracks: Push, Pull, Legs, Skills</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">30-minute sessions, 4x per week</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Clear unlock standards for progression</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Unlock skills: pull-ups, handstands, pistol squats</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Minimal equipment needed</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mt-auto pt-4">
+                <a
+                  href="/timothenics-30"
+                  className="block w-full text-center px-8 py-4 rounded-full bg-gold hover:bg-gold-light text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  Get Timothenics 30
+                </a>
+              </div>
+            </div>
+
+            {/* 7-Day Free Plan */}
+            <div className="bg-background-secondary border border-white/10 rounded-xl overflow-hidden hover:border-gold transition-all duration-300 flex flex-col">
+              <div className="p-8 md:p-10 flex-grow">
+                <div className="mb-6">
+                  <div className="inline-block bg-gold/20 text-gold px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
+                    Free
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">7-Day Start</h2>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-4xl font-bold text-gold">$0</span>
+                    <span className="text-foreground-muted">free forever</span>
+                  </div>
+                  <p className="text-lg text-foreground-muted">
+                    Test the Timothenics system with a week of guided training. Experience all four tracks before committing.
+                  </p>
+                </div>
+
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">7 complete workouts</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">30 minutes or less per session</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Experience all 4 training tracks</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Zero equipment required</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-foreground">Perfect for beginners</span>
+                  </li>
+                </ul>
+
+                <div className="mt-auto pt-4">
+                  <a
+                    href="/7-day-plan"
+                    className="block w-full text-center px-8 py-4 rounded-full bg-transparent border-2 border-gold hover:bg-gold text-gold hover:text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300"
+                  >
+                    Start Free 7-Day Plan
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </Section>
+
+      {/* Example Unlocks Section */}
       <Section className="bg-background-secondary">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-gradient-to-br from-background to-background-panel border-2 border-gold rounded-lg overflow-hidden">
-            <div className="p-8 md:p-12">
-              <div className="mb-6">
-                <div className="inline-block bg-gold text-dark px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
-                  First Launch
-                </div>
-                <h2 className="text-white mb-4">Timothenics 30 – Levels Program</h2>
-                <p className="text-xl text-foreground mb-8">
-                  An 8-week, level-based calisthenics system built around four 30-minute sessions per week. Progress through Beginner, Intermediate, and Advanced levels in the Push, Pull, Legs, and Skills tracks—and unlock specific abilities along the way.
-                </p>
-              </div>
+          <div className="text-center mb-12">
+            <h2 className="text-white mb-4">What You'll Unlock</h2>
+            <p className="text-foreground-muted text-lg">
+              Timothenics 30 is designed to help you achieve real calisthenics skills
+            </p>
+          </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-foreground">4 × 30-minute "missions" each week: Push, Pull, Legs, Skills</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-foreground">Three levels in each track: Beginner, Intermediate, Advanced</span>
-                  </li>
-                </ul>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-foreground">Clear unlock standards so you know exactly when to level up</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-foreground">Skill-based rewards like your first pull-up, deeper squats, and handstand progress</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Example Unlocks */}
-              <div className="bg-background-panel border border-white/10 rounded-lg p-8 mb-8">
-                <h3 className="text-white mb-6 text-2xl font-semibold">Example unlocks</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-background-panel border border-white/10 rounded-xl p-8 md:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div>
                     <h4 className="text-gold font-semibold mb-3 flex items-center">
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,74 +235,8 @@ export default function Programs() {
                 </div>
               </div>
 
-              <a
-                href="/timothenics-30"
-                className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg"
-              >
-                Get Timothenics 30
-              </a>
             </div>
           </div>
-        </div>
-      </Section>
-
-      {/* Free 7-Day Start */}
-      <Section className="bg-background">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300">
-            <div className="p-8 md:p-12">
-              <div className="flex items-start justify-between mb-6">
-                <div>
-                  <h2 className="text-white mb-2">Timothenics 7-Day Start</h2>
-                  <div className="inline-block bg-gold/20 text-gold px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">
-                    Free
-                  </div>
-                </div>
-              </div>
-
-              <p className="text-foreground-muted mb-6 text-lg">
-                A free 7-day introduction to the Timothenics system. Four 30-minute sessions that show you what Push, Pull, Legs, and Skills feel like—with minimal gear and clear structure.
-              </p>
-
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">7 days of guided 30-minute sessions</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Train at home or at a park</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Perfect way to test the system before committing</span>
-                </li>
-              </ul>
-
-              <a
-                href="/#free-plan"
-                className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg"
-              >
-                Get the 7-Day Plan
-              </a>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* Future Programs */}
-      <Section className="bg-background-secondary">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-white mb-6">More programs coming soon</h2>
-          <p className="text-foreground-muted text-lg">
-            Timothenics 30 is just the beginning. Additional programs with different focuses and training styles are in development. Stay tuned.
-          </p>
         </div>
       </Section>
 
@@ -257,22 +293,22 @@ export default function Programs() {
       {/* CTA */}
       <Section className="bg-background-secondary">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="mb-6 text-white">Ready to start leveling up?</h2>
-          <p className="text-xl text-foreground-muted mb-8">
-            Test the system with the free 7-Day Start, or jump straight into Timothenics 30 and start unlocking skills.
+          <h2 className="mb-6 text-white">Ready to Start?</h2>
+          <p className="text-xl text-foreground-muted mb-10">
+            Test the system with the free 7-Day Start, or jump straight into Timothenics 30.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/#free-plan"
-              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg"
+              href="/7-day-plan"
+              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-dark font-semibold text-sm uppercase tracking-wide transition-all duration-300"
             >
-              Get the Free 7-Day Plan
+              Start Free 7-Day Plan
             </a>
             <a
-              href="/method"
-              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-transparent border-2 border-white text-white font-semibold text-sm uppercase tracking-wide hover:bg-white hover:text-dark transition-all duration-300"
+              href="/timothenics-30"
+              className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg"
             >
-              Learn About the System
+              Get Timothenics 30
             </a>
           </div>
         </div>

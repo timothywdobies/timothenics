@@ -1,35 +1,13 @@
 'use client'
 
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Layout from '@/components/Layout'
 import Section from '@/components/Section'
-import Button from '@/components/Button'
-import Card from '@/components/Card'
 
 export default function Home() {
   const [email, setEmail] = useState('')
-  const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({})
-  const observerRef = useRef<IntersectionObserver | null>(null)
   const router = useRouter()
-
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible((prev) => ({ ...prev, [entry.target.id]: true }))
-          }
-        })
-      },
-      { threshold: 0.1 }
-    )
-
-    const elements = document.querySelectorAll('[data-animate]')
-    elements.forEach((el) => observerRef.current?.observe(el))
-
-    return () => observerRef.current?.disconnect()
-  }, [])
 
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -39,38 +17,54 @@ export default function Home() {
 
   return (
     <Layout>
-      {/* Hero Section - Full Screen */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image - Handstand at Sunset */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/hero-handstand.png)',
-            backgroundPosition: 'center center',
-          }}
-        >
-          {/* Subtle Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-        </div>
+      {/* Hero Section - Split Layout */}
+      <section className="relative h-screen min-h-[640px] overflow-hidden bg-[#0a0a0a]">
+        <div className="absolute inset-0 flex flex-col md:flex-row">
+          {/* Left Content - 52% */}
+          <div className="relative z-10 w-full md:w-[52%] flex items-center justify-center px-8 md:px-16 py-20 md:py-0">
+            {/* Gradient Overlay from left */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0f1419] to-transparent pointer-events-none"></div>
 
-        {/* Content Positioned in Upper Area */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center -mt-32">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-white tracking-tight animate-fade-in-up text-shadow drop-shadow-2xl">
-            Master Bodyweight Strength
-          </h1>
-          <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-medium drop-shadow-lg" style={{ animationDelay: '0.1s', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
-            Build real strength with minimal equipment, unlock skills like handstands and muscle-ups, and train anywhere, anytime.
-          </p>
+            <div className="relative z-20 max-w-[560px] w-full">
+              {/* Eyebrow */}
+              <div className="mb-3">
+                <span className="text-sm font-medium tracking-[0.18em] uppercase text-gold">
+                  TIMOTHENICS
+                </span>
+              </div>
 
-          {/* CTA Button */}
-          <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <a
-              href="/programs"
-              className="group relative inline-flex items-center justify-center px-12 py-5 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow-lg hover:shadow-glow-lg hover:scale-105 overflow-hidden"
+              {/* Main Heading */}
+              <h1 className="text-[34px] md:text-[44px] lg:text-[56px] font-extrabold leading-[1.05] tracking-tight text-white mb-4">
+                MASTER BODYWEIGHT STRENGTH
+              </h1>
+
+              {/* Subheading */}
+              <p className="text-base md:text-lg leading-relaxed text-gray-300 mb-7 max-w-[420px]">
+                Build real strength with minimal equipment, unlock skills like handstands and muscle-ups, and train anywhere, anytime.
+              </p>
+
+              {/* CTA Button */}
+              <a
+                href="/programs"
+                className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-gold hover:bg-gold-light text-dark font-semibold text-[15px] uppercase tracking-wide transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.35)] hover:shadow-glow-lg hover:scale-105"
+              >
+                START NOW
+              </a>
+            </div>
+          </div>
+
+          {/* Right Image - 48% */}
+          <div className="relative w-full md:w-[48%] h-[320px] md:h-full">
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage: 'url(/hero-handstand.png)',
+              }}
             >
-              <span className="relative z-10">Programs</span>
-              <div className="absolute inset-0 bg-shimmer animate-shimmer"></div>
-            </a>
+              {/* Gradient overlay from left on image */}
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#0a0a0a]/60"></div>
+            </div>
           </div>
         </div>
       </section>

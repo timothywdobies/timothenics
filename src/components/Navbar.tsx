@@ -1,9 +1,8 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Container from './Container'
 
 const navLinks = [
   { href: '/', label: 'HOME' },
@@ -18,117 +17,83 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   return (
-    <nav
-      className={`
-        sticky top-0 z-50 transition-all duration-300
-        ${scrolled
-          ? 'backdrop-blur-lg bg-background/80 shadow-premium border-b border-white/20'
-          : 'bg-background border-b border-white/10'
-        }
-      `}
-    >
-      <Container>
-        <div className="flex justify-between items-center h-18 md:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center group">
-            <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <span className="text-gold font-bold text-xl md:text-2xl transition-all duration-300 group-hover:text-gold-light">T</span>
-            </div>
-            <span className="ml-3 text-lg md:text-xl font-bold text-foreground uppercase tracking-wide transition-colors duration-300 group-hover:text-gold font-brand">
-              Timothenics
-            </span>
-          </Link>
+    <nav className="sticky top-0 z-50 bg-black h-[72px]">
+      <div className="max-w-[1400px] mx-auto px-8 h-full flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center group">
+          <span className="text-gold font-bold text-2xl transition-all duration-200 group-hover:text-gold-light">
+            T
+          </span>
+          <span className="ml-2 text-lg font-bold text-white uppercase tracking-wide transition-colors duration-200 group-hover:text-gold">
+            Timothenics
+          </span>
+        </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`
-                  relative text-xs font-medium tracking-nav transition-colors duration-200
-                  ${pathname === link.href
-                    ? 'text-gold'
-                    : 'text-foreground hover:text-gold'
-                  }
-                `}
-              >
-                {link.label}
-                {pathname === link.href && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent animate-fade-in" />
-                )}
-              </Link>
-            ))}
-          </div>
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex items-center space-x-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`
+                text-sm font-medium tracking-[0.14em] transition-colors duration-200
+                ${pathname === link.href
+                  ? 'text-gold'
+                  : 'text-white hover:text-gray-300'
+                }
+              `}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
 
-          {/* Right Icons */}
-          <div className="hidden md:flex items-center space-x-6">
-            <button className="text-foreground hover:text-gold transition-all duration-300 hover:scale-110">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
-            <button className="text-foreground hover:text-gold transition-all duration-300 hover:scale-110">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
-            </button>
-            <button className="text-foreground hover:text-gold transition-all duration-300 hover:scale-110 relative">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 text-foreground hover:text-gold transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <div className="w-6 h-5 flex flex-col justify-between">
-              <span className={`block h-0.5 w-full bg-current transition-all duration-300 ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-              <span className={`block h-0.5 w-full bg-current transition-all duration-300 ${mobileMenuOpen ? 'opacity-0' : ''}`}></span>
-              <span className={`block h-0.5 w-full bg-current transition-all duration-300 ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
-            </div>
+        {/* Right Actions */}
+        <div className="hidden lg:flex items-center">
+          <button className="text-white hover:text-gray-300 transition-colors duration-200">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden pb-4 pt-2 border-t border-white/10 animate-fade-in">
-            {navLinks.map((link, index) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`
-                  block py-3 text-sm font-medium tracking-wide transition-colors duration-200
-                  ${pathname === link.href
-                    ? 'text-gold'
-                    : 'text-foreground hover:text-gold'
-                  }
-                `}
-                style={{ animationDelay: `${index * 50}ms` }}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden p-2 text-white hover:text-gold transition-colors"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <div className="w-6 h-5 flex flex-col justify-between">
+            <span className={`block h-0.5 w-full bg-current transition-all duration-300 ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+            <span className={`block h-0.5 w-full bg-current transition-all duration-300 ${mobileMenuOpen ? 'opacity-0' : ''}`}></span>
+            <span className={`block h-0.5 w-full bg-current transition-all duration-300 ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
           </div>
-        )}
-      </Container>
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden bg-black border-t border-white/10 px-8 py-4">
+          {navLinks.map((link, index) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`
+                block py-3 text-sm font-medium tracking-wide transition-colors duration-200
+                ${pathname === link.href
+                  ? 'text-gold'
+                  : 'text-white hover:text-gray-300'
+                }
+              `}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
     </nav>
   )
 }

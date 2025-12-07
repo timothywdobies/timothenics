@@ -7,18 +7,45 @@ import { useRouter } from 'next/navigation'
 
 export default function SevenDayPlan() {
   const [email, setEmail] = useState('')
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState('')
   const router = useRouter()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setIsSubmitting(true)
+    setError('')
 
-    // For now, just store in localStorage that they signed up
-    // Later, connect this to your email service (ConvertKit, Mailchimp, etc.)
-    localStorage.setItem('7dayPlanEmail', email)
-    localStorage.setItem('7dayPlanAccess', 'true')
+    try {
+      // Subscribe to ConvertKit
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          tags: ['7-day-plan'], // Tag subscribers for segmentation
+        }),
+      })
 
-    // Redirect to access page
-    router.push('/7-day-plan/access')
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe')
+      }
+
+      // Store access in localStorage for immediate access
+      localStorage.setItem('7dayPlanEmail', email)
+      localStorage.setItem('7dayPlanAccess', 'true')
+
+      // Redirect to access page
+      router.push('/7-day-plan/access')
+    } catch (err) {
+      console.error('Subscription error:', err)
+      setError('Something went wrong. Please try again.')
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -58,15 +85,22 @@ export default function SevenDayPlan() {
                   placeholder="your.email@example.com"
                   className="w-full px-6 py-4 rounded-full bg-background/50 backdrop-blur-sm border-2 border-white/20 text-white placeholder-foreground-muted/50 focus:border-gold focus:outline-none focus:shadow-glow transition-all duration-300"
                   required
+                  disabled={isSubmitting}
                 />
                 <button
                   type="submit"
-                  className="w-full group relative px-10 py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow hover:shadow-glow-lg hover:scale-105 overflow-hidden"
+                  disabled={isSubmitting}
+                  className="w-full group relative px-10 py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow hover:shadow-glow-lg hover:scale-105 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
-                  <span className="relative z-10">Get Free Access</span>
+                  <span className="relative z-10">
+                    {isSubmitting ? 'Signing Up...' : 'Get Free Access'}
+                  </span>
                   <div className="absolute inset-0 bg-shimmer animate-shimmer"></div>
                 </button>
               </div>
+              {error && (
+                <p className="text-red-400 text-sm text-center mt-4">{error}</p>
+              )}
             </form>
 
             <p className="text-foreground-muted/60 text-sm text-center mt-6">
