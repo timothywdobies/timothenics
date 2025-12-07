@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import Container from './Container'
 
 const navLinks = [
+  { href: '/', label: 'HOME' },
   { href: '/programs', label: 'PROGRAMS' },
   { href: '/gear', label: 'EQUIPMENT' },
   { href: '/clothing', label: 'APPAREL' },
