@@ -24,47 +24,7 @@ export default function Timothenics30() {
         </div>
       </Section>
 
-      {/* Program Overview */}
-      <Section className="bg-background-secondary">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-white mb-4">How it works</h2>
-            <p className="text-foreground-muted max-w-2xl mx-auto">
-              Four focused 30-minute missions each week: Push, Pull, Legs, and Skills. Every session follows the same 5–20–5 structure.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {[
-              { title: 'Push 30', desc: 'chest, shoulders, triceps', icon: 'M13 10V3L4 14h7v7l9-11h-7z' },
-              { title: 'Pull 30', desc: 'back, biceps, grip', icon: 'M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4' },
-              { title: 'Legs 30', desc: 'quads, glutes, hamstrings, calves', icon: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10' },
-              { title: 'Skills 30', desc: 'handstand, core, levers, control', icon: 'M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z' },
-            ].map((track, index) => (
-              <div
-                key={index}
-                className="glass-card p-8 text-center group hover:shadow-glow transition-all duration-300"
-              >
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-gold group-hover:text-gold-light transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={track.icon} />
-                  </svg>
-                </div>
-                <h3 className="text-white mb-2 text-xl font-semibold group-hover:text-gold transition-colors">{track.title}</h3>
-                <p className="text-foreground-muted text-sm">{track.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="glass-card border-l-4 border-gold rounded-xl p-8 max-w-4xl mx-auto shadow-premium">
-            <p className="text-foreground text-center text-lg">
-              <span className="font-bold text-gold">All sessions use the 5–20–5 framework:</span> 5 minutes warm-up, 20 minutes focused strength work, 5 minutes finisher or core.
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      {/* The Program Content - Placeholder */}
+      {/* The Program Content */}
       <Section className="bg-background">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
