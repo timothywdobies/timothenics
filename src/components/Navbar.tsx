@@ -10,7 +10,6 @@ const navLinks = [
   { href: '/programs', label: 'PROGRAMS' },
   { href: '/gear', label: 'EQUIPMENT' },
   { href: '/clothing', label: 'APPAREL' },
-  { href: '/method', label: 'METHOD' },
   { href: '/about', label: 'ABOUT' },
   { href: '/app', label: 'APP' },
   { href: '/contact', label: 'CONTACT' },

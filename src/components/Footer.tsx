@@ -29,7 +29,6 @@ export default function Footer() {
               <li><Link href="/programs" className="text-foreground/60 hover:text-gold transition-colors text-sm">Programs</Link></li>
               <li><Link href="/gear" className="text-foreground/60 hover:text-gold transition-colors text-sm">Equipment</Link></li>
               <li><Link href="/clothing" className="text-foreground/60 hover:text-gold transition-colors text-sm">Apparel</Link></li>
-              <li><Link href="/method" className="text-foreground/60 hover:text-gold transition-colors text-sm">Method</Link></li>
               <li><Link href="/about" className="text-foreground/60 hover:text-gold transition-colors text-sm">About</Link></li>
             </ul>
           </div>
