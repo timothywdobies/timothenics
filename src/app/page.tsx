@@ -17,54 +17,46 @@ export default function Home() {
 
   return (
     <Layout>
-      {/* Hero Section - Split Layout */}
-      <section className="relative h-screen min-h-[640px] overflow-hidden bg-[#0a0a0a]">
-        <div className="absolute inset-0 flex flex-col md:flex-row">
-          {/* Left Content - 52% */}
-          <div className="relative z-10 w-full md:w-[52%] flex items-center justify-center px-8 md:px-16 py-20 md:py-0">
-            {/* Gradient Overlay from left */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0f1419] to-transparent pointer-events-none"></div>
+      {/* Hero Section - Full Background */}
+      <section className="relative h-screen min-h-[640px] overflow-hidden">
+        {/* Full Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/hero-handstand.png)',
+          }}
+        >
+          {/* Dark gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
 
-            <div className="relative z-20 max-w-[560px] w-full">
-              {/* Eyebrow */}
-              <div className="mb-3">
-                <span className="text-sm font-medium tracking-[0.18em] uppercase text-gold">
-                  TIMOTHENICS
-                </span>
-              </div>
-
-              {/* Main Heading */}
-              <h1 className="text-[34px] md:text-[44px] lg:text-[56px] font-extrabold leading-[1.05] tracking-tight text-white mb-4">
-                MASTER BODYWEIGHT STRENGTH
-              </h1>
-
-              {/* Subheading */}
-              <p className="text-base md:text-lg leading-relaxed text-gray-300 mb-7 max-w-[420px]">
-                Build real strength with minimal equipment, unlock skills like handstands and muscle-ups, and train anywhere, anytime.
-              </p>
-
-              {/* CTA Button */}
-              <a
-                href="/programs"
-                className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-gold hover:bg-gold-light text-dark font-semibold text-[15px] uppercase tracking-wide transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.35)] hover:shadow-glow-lg hover:scale-105"
-              >
-                START NOW
-              </a>
+        {/* Content - Left Aligned */}
+        <div className="relative z-10 h-full flex items-center px-8 md:px-16">
+          <div className="max-w-[560px] w-full">
+            {/* Eyebrow */}
+            <div className="mb-3">
+              <span className="text-sm font-medium tracking-[0.18em] uppercase text-gold">
+                TIMOTHENICS
+              </span>
             </div>
-          </div>
 
-          {/* Right Image - 48% */}
-          <div className="relative w-full md:w-[48%] h-[320px] md:h-full">
-            {/* Background Image */}
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: 'url(/hero-handstand.png)',
-              }}
+            {/* Main Heading */}
+            <h1 className="text-[34px] md:text-[44px] lg:text-[56px] font-extrabold leading-[1.05] tracking-tight text-white mb-4">
+              MASTER BODYWEIGHT STRENGTH
+            </h1>
+
+            {/* Subheading */}
+            <p className="text-base md:text-lg leading-relaxed text-gray-300 mb-7 max-w-[420px]">
+              Build real strength with minimal equipment, unlock skills like handstands and muscle-ups, and train anywhere, anytime.
+            </p>
+
+            {/* CTA Button */}
+            <a
+              href="/programs"
+              className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-gold hover:bg-gold-light text-dark font-semibold text-[15px] uppercase tracking-wide transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.35)] hover:shadow-glow-lg hover:scale-105"
             >
-              {/* Gradient overlay from left on image */}
-              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#0a0a0a]/60"></div>
-            </div>
+              START NOW
+            </a>
           </div>
         </div>
       </section>
