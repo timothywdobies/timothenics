@@ -37,9 +37,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide">Connect</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-foreground/60 hover:text-gold transition-colors text-sm">Instagram</a></li>
-              <li><a href="#" className="text-foreground/60 hover:text-gold transition-colors text-sm">TikTok</a></li>
-              <li><a href="#" className="text-foreground/60 hover:text-gold transition-colors text-sm">YouTube</a></li>
+              <li><a href="https://instagram.com/timothenics" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-gold transition-colors text-sm">Instagram</a></li>
+              <li><a href="https://tiktok.com/@timothenics" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-gold transition-colors text-sm">TikTok</a></li>
+              <li><a href="https://youtube.com/@timothenics" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-gold transition-colors text-sm">YouTube</a></li>
               <li><Link href="/contact" className="text-foreground/60 hover:text-gold transition-colors text-sm">Contact</Link></li>
             </ul>
           </div>
