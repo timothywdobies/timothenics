@@ -55,7 +55,7 @@ export default function Home() {
               href="/programs"
               className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-gold hover:bg-gold-light text-dark font-semibold text-[15px] uppercase tracking-wide transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.35)] hover:shadow-glow-lg hover:scale-105"
             >
-              START NOW
+              PROGRAMS
             </a>
           </div>
         </div>
