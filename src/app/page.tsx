@@ -55,10 +55,10 @@ export default function Home() {
         {/* Content Positioned in Upper Area */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center -mt-32">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-white tracking-tight animate-fade-in-up text-shadow drop-shadow-2xl">
-            Join Timothenics for <span className="text-white">$1</span>
+            Master Bodyweight Strength
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-medium drop-shadow-lg" style={{ animationDelay: '0.1s', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
-            Four 30-minute sessions a week. Level-based progression. Unlock skills like handstands, pull-ups, and advanced calisthenics moves.
+            Master your bodyweight. Build real strength with minimal equipment, unlock skills like handstands and muscle-ups, and train anywhere, anytime.
           </p>
 
           {/* CTA Button */}
