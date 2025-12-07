@@ -135,10 +135,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-
-        <p className="text-foreground-muted text-center max-w-3xl mx-auto text-lg">
-          As you level up, the sessions stay 30 minutes, but the movements get more advanced, the tension increases, and your skills and physique follow.
-        </p>
       </Section>
 
       {/* What You Can Unlock */}
