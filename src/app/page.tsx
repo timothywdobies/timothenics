@@ -61,19 +61,13 @@ export default function Home() {
             Four 30-minute sessions a week. Level-based progression. Unlock skills like handstands, pull-ups, and advanced calisthenics moves.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <a
-              href="#free-plan"
-              className="group relative inline-flex items-center justify-center px-12 py-5 rounded-full bg-white/95 backdrop-blur-sm text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-2xl hover:shadow-2xl hover:scale-105 hover:bg-white overflow-hidden"
-            >
-              <span className="relative z-10">Get the Free 7-Day Plan</span>
-            </a>
+          {/* CTA Button */}
+          <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <a
               href="/programs"
               className="group relative inline-flex items-center justify-center px-12 py-5 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow-lg hover:shadow-glow-lg hover:scale-105 overflow-hidden"
             >
-              <span className="relative z-10">See Timothenics 30</span>
+              <span className="relative z-10">Programs</span>
               <div className="absolute inset-0 bg-shimmer animate-shimmer"></div>
             </a>
           </div>
