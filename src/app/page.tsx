@@ -210,23 +210,6 @@ export default function Home() {
           </form>
         </div>
       </Section>
-
-      {/* Bottom Promo Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 backdrop-blur-lg bg-background-secondary/80 border-t border-gold/30 shadow-premium">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between overflow-x-auto">
-          <div className="flex items-center space-x-12 text-foreground">
-            {['LEVEL-BASED PROGRESSION', 'UNLOCKABLE SKILLS', '30-MINUTE SESSIONS'].map((item, index) => (
-              <div key={index} className="flex items-center space-x-2 whitespace-nowrap group">
-                <div className="w-1.5 h-1.5 rounded-full bg-gold group-hover:scale-150 transition-transform duration-300"></div>
-                <span className="text-xs font-medium uppercase tracking-wide group-hover:text-gold transition-colors">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Add padding to prevent content being hidden by fixed promo bar */}
-      <div className="h-16"></div>
     </Layout>
   )
 }
