@@ -7,11 +7,24 @@ export default function Programs() {
   return (
     <Layout>
       {/* Page Header */}
-      <Section className="py-20 md:py-24 bg-background">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-white">Training Programs</h1>
+      <section className="relative py-32 md:py-40 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/programs-hero.png)',
+            backgroundPosition: 'center center',
+          }}
+        >
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
-      </Section>
+
+        {/* Content */}
+        <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
+          <h1 className="text-white drop-shadow-2xl">Training Programs</h1>
+        </div>
+      </section>
 
       {/* Timothenics 30 - First Program Launch */}
       <Section className="bg-background-secondary">
