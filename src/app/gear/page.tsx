@@ -32,7 +32,7 @@ export default function Gear() {
             Timothenics Equipment
           </h1>
           <p className="text-lg md:text-xl text-white max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up font-semibold drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-            Minimal tools for effective 30-minute sessions. Everything you need, nothing you don't.
+            Minimal tools for everything you need, nothing you don't.
           </p>
           <p className="text-base md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed animate-fade-in-up font-medium drop-shadow-lg" style={{ animationDelay: '0.3s' }}>
             A pull-up bar, the floor, and a few smart accessories are enough to train push, pull, legs, and core.
