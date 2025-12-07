@@ -74,44 +74,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How Timothenics Works */}
+      {/* The Timothenics Approach */}
       <Section className="bg-background py-24 md:py-32">
         <div id="how-it-works" data-animate className={`text-center mb-16 transition-all duration-1000 ${isVisible['how-it-works'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-white mb-6">How Timothenics works</h2>
+          <h2 className="text-white mb-6">The Timothenics approach</h2>
           <p className="text-lg text-foreground-muted max-w-3xl mx-auto">
-            Timothenics is built around four 30-minute "missions" each week: Push, Pull, Legs, and Skills. Every session follows the same 5–20–5 structure so you always know what to do when it's time to train.
+            Timothenics is a training system built on progression, not repetition. You earn your way forward through clear standards, unlock advanced movements, and build real strength—all in efficient, focused sessions.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {[
-            { icon: 'M13 10V3L4 14h7v7l9-11h-7z', title: 'Push 30', desc: 'chest, shoulders, triceps', delay: '0s' },
-            { icon: 'M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4', title: 'Pull 30', desc: 'back, biceps, grip', delay: '0.1s' },
-            { icon: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10', title: 'Legs 30', desc: 'quads, glutes, hamstrings, calves', delay: '0.2s' },
-            { icon: 'M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z', title: 'Skills 30', desc: 'handstand, core, levers, control', delay: '0.3s' },
-          ].map((track, index) => (
+            { icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z', title: 'Level-based progression', desc: 'Unlock the next level by hitting clear standards', delay: '0s' },
+            { icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z', title: '30-minute sessions', desc: 'Efficient training that fits your schedule', delay: '0.1s' },
+            { icon: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z', title: 'Unlockable skills', desc: 'Progress to handstands, pull-ups, and beyond', delay: '0.2s' },
+            { icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z', title: 'Bodyweight mastery', desc: 'Build strength and control with minimal equipment', delay: '0.3s' },
+          ].map((principle, index) => (
             <div
               key={index}
-              id={`track-${index}`}
+              id={`principle-${index}`}
               data-animate
-              className={`card-premium glass-card p-8 hover:shadow-glow transition-all duration-500 text-center group ${isVisible[`track-${index}`] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-              style={{ transitionDelay: track.delay }}
+              className={`card-premium glass-card p-8 hover:shadow-glow transition-all duration-500 text-center group ${isVisible[`principle-${index}`] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: principle.delay }}
             >
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-gold group-hover:text-gold-light transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={track.icon} />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={principle.icon} />
                 </svg>
               </div>
-              <h3 className="text-white mb-2 text-xl font-semibold group-hover:text-gold transition-colors">{track.title}</h3>
-              <p className="text-foreground-muted text-sm">{track.desc}</p>
+              <h3 className="text-white mb-2 text-xl font-semibold group-hover:text-gold transition-colors">{principle.title}</h3>
+              <p className="text-foreground-muted text-sm">{principle.desc}</p>
             </div>
           ))}
-        </div>
-
-        <div className="glass-card border-l-4 border-gold rounded-xl p-8 max-w-4xl mx-auto shadow-premium">
-          <p className="text-foreground text-center text-lg">
-            <span className="font-bold text-gold">All sessions use the 5–20–5 framework:</span> 5 minutes warm-up, 20 minutes focused strength work, 5 minutes finisher or core.
-          </p>
         </div>
       </Section>
 
