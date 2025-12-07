@@ -158,6 +158,192 @@ export default function Gear() {
               </div>
             </div>
           </div>
+
+          {/* Parallel Bars */}
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
+            <div className="relative h-48 bg-background-panel flex items-center justify-center">
+              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </div>
+
+            <div className="p-8 flex-grow flex flex-col">
+              <div className="mb-4">
+                <h3 className="mb-2 text-white group-hover:text-gold transition-colors">Parallel Bars</h3>
+                <div className="mb-4">
+                  <span className="inline-block bg-gold/20 text-gold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
+                    Coming Soon
+                  </span>
+                </div>
+              </div>
+
+              <div className="mb-6 flex-grow">
+                <p className="text-foreground-muted mb-4">
+                  Professional-grade parallel bars for dips, L-sits, and upper body strength work. Stable, adjustable, and built for serious training.
+                </p>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-2 text-white">Features:</h4>
+                  <ul className="space-y-1 text-sm text-foreground-muted">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Adjustable width settings</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Heavy-duty steel construction</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Non-slip grip handles</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Supports 400+ lbs</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-auto">
+                <button disabled className="w-full px-8 py-3 rounded-full bg-gold/20 text-gold-light/80 font-semibold text-sm uppercase tracking-wide cursor-not-allowed">
+                  Notify When Available
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Resistance Bands */}
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
+            <div className="relative h-48 bg-background-panel flex items-center justify-center">
+              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+
+            <div className="p-8 flex-grow flex flex-col">
+              <div className="mb-4">
+                <h3 className="mb-2 text-white group-hover:text-gold transition-colors">Resistance Bands Set</h3>
+                <div className="mb-4">
+                  <span className="inline-block bg-gold/20 text-gold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
+                    Coming Soon
+                  </span>
+                </div>
+              </div>
+
+              <div className="mb-6 flex-grow">
+                <p className="text-foreground-muted mb-4">
+                  Premium resistance bands for scaling exercises, adding progressive resistance, and building pull-up strength. Train anywhere.
+                </p>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-2 text-white">What's Included:</h4>
+                  <ul className="space-y-1 text-sm text-foreground-muted">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>5 resistance levels (10-150 lbs)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Durable latex-free material</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Portable carry bag</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Exercise guide included</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-auto">
+                <button disabled className="w-full px-8 py-3 rounded-full bg-gold/20 text-gold-light/80 font-semibold text-sm uppercase tracking-wide cursor-not-allowed">
+                  Notify When Available
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Weight Vest */}
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
+            <div className="relative h-48 bg-background-panel flex items-center justify-center">
+              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+
+            <div className="p-8 flex-grow flex flex-col">
+              <div className="mb-4">
+                <h3 className="mb-2 text-white group-hover:text-gold transition-colors">Adjustable Weight Vest</h3>
+                <div className="mb-4">
+                  <span className="inline-block bg-gold/20 text-gold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
+                    Coming Soon
+                  </span>
+                </div>
+              </div>
+
+              <div className="mb-6 flex-grow">
+                <p className="text-foreground-muted mb-4">
+                  Add progressive overload to bodyweight movements. Perfect for weighted pull-ups, dips, push-ups, and squats. Adjustable for all fitness levels.
+                </p>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-2 text-white">Specs:</h4>
+                  <ul className="space-y-1 text-sm text-foreground-muted">
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Adjustable 10-40 lbs</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Comfortable padded design</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>Secure adjustable straps</span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span>One size fits most</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-auto">
+                <button disabled className="w-full px-8 py-3 rounded-full bg-gold/20 text-gold-light/80 font-semibold text-sm uppercase tracking-wide cursor-not-allowed">
+                  Notify When Available
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </Section>
 
