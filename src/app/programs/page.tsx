@@ -7,7 +7,7 @@ export default function Programs() {
   return (
     <>
       {/* Page Header */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-black">
         {/* Background Image */}
         <div
           className="absolute inset-0"
