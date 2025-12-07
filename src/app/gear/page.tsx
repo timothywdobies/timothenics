@@ -37,65 +37,6 @@ export default function Gear() {
       {/* Product Cards */}
       <Section className="bg-background" containerClassName="max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Timothenics Starter Kit */}
-          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
-            <div className="relative h-48 bg-background-panel flex items-center justify-center">
-              <svg className="w-20 h-20 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-              </svg>
-            </div>
-
-            <div className="p-8 flex-grow flex flex-col">
-              <div className="mb-4">
-                <h3 className="mb-2 text-white group-hover:text-gold transition-colors">Timothenics Starter Kit</h3>
-                <p className="text-2xl font-bold text-gold mb-4">$49</p>
-              </div>
-
-              <div className="mb-6 flex-grow">
-                <p className="text-foreground-muted mb-4">
-                  Complete set of resistance bands and sliders. Everything you need to scale progressions,
-                  add resistance, and train movements you can't do with bodyweight alone.
-                </p>
-
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2 text-white">What's Included:</h4>
-                  <ul className="space-y-1 text-sm text-foreground-muted">
-                    <li className="flex items-start">
-                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span>3 resistance bands (light, medium, heavy)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span>2 slider discs for any floor surface</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span>Mesh carry bag</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-4 h-4 text-gold mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span>Quick-start exercise guide</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="mt-auto">
-                <button className="w-full px-8 py-3 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-
           {/* Timothenics Parallettes */}
           <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 group flex flex-col">
             <div className="relative h-48 bg-background-panel flex items-center justify-center">
