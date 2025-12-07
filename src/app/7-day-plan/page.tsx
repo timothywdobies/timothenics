@@ -41,8 +41,7 @@ export default function SevenDayPlan() {
 
       // Redirect to access page
       router.push('/7-day-plan/access')
-    } catch (err) {
-      console.error('Subscription error:', err)
+    } catch {
       setError('Something went wrong. Please try again.')
       setIsSubmitting(false)
     }

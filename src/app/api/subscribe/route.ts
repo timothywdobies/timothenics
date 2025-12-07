@@ -13,9 +13,8 @@ export async function POST(request: Request) {
     const CONVERTKIT_FORM_ID = process.env.CONVERTKIT_FORM_ID
 
     if (!CONVERTKIT_API_KEY || !CONVERTKIT_FORM_ID) {
-      console.error('ConvertKit credentials not configured')
+      // ConvertKit credentials not configured
       // Still return success so user experience isn't broken
-      // You'll see the error in logs
       return NextResponse.json({
         success: true,
         message: 'Email captured (ConvertKit not configured yet)'
@@ -41,7 +40,6 @@ export async function POST(request: Request) {
     const data = await response.json()
 
     if (!response.ok) {
-      console.error('ConvertKit API error:', data)
       return NextResponse.json(
         { error: 'Failed to subscribe to email list' },
         { status: 500 }
@@ -54,8 +52,7 @@ export async function POST(request: Request) {
       subscriber: data.subscription
     })
 
-  } catch (error) {
-    console.error('Subscribe API error:', error)
+  } catch {
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }
