@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import Layout from '@/components/Layout'
 import Section from '@/components/Section'
 import Button from '@/components/Button'
@@ -10,6 +11,7 @@ export default function Home() {
   const [email, setEmail] = useState('')
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({})
   const observerRef = useRef<IntersectionObserver | null>(null)
+  const router = useRouter()
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -31,9 +33,8 @@ export default function Home() {
 
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Email submitted:', email)
-    alert(`Thanks! We'll send the 7-Day Plan to ${email}`)
-    setEmail('')
+    // Redirect to 7-day plan signup page
+    router.push('/7-day-plan')
   }
 
   return (
