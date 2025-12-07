@@ -7,17 +7,19 @@ export default function Programs() {
   return (
     <Layout>
       {/* Page Header */}
-      <section className="relative py-32 md:py-40 overflow-hidden">
+      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0"
           style={{
             backgroundImage: 'url(/programs-hero.png)',
+            backgroundSize: 'cover',
             backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
           }}
         >
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
         {/* Content */}
