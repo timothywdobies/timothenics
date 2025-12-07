@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Timothenics',
     images: [
       {
-        url: '/og-image.png', // TODO: Replace with custom Timothenics text image
+        url: 'https://timothenics.com/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Timothenics',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Timothenics',
     description: 'Timothenics',
-    images: ['/og-image.png'], // TODO: Replace with custom Timothenics text image
+    images: ['https://timothenics.com/og-image.png'],
   },
 }
 
