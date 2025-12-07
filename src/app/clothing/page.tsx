@@ -12,19 +12,9 @@ export default function Clothing() {
       image: '/clothing/training-tee.jpg', // TODO: Replace with actual product image
     },
     {
-      id: 2,
-      name: 'Performance Hoodie',
-      image: '/clothing/performance-hoodie.jpg', // TODO: Replace with actual product image
-    },
-    {
       id: 3,
       name: 'Training Shorts',
       image: '/clothing/training-shorts.jpg', // TODO: Replace with actual product image
-    },
-    {
-      id: 4,
-      name: 'Track Pants',
-      image: '/clothing/track-pants.jpg', // TODO: Replace with actual product image
     },
   ]
 
