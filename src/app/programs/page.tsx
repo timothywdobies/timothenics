@@ -12,71 +12,21 @@ export default function Programs() {
           <p className="text-xs md:text-sm font-medium tracking-wider uppercase text-gold mb-6">
             PROGRAMS
           </p>
-          <h1 className="mb-6 text-white">Programs</h1>
+          <h1 className="mb-6 text-white">Timothenics Programs</h1>
           <p className="text-xl md:text-2xl text-foreground">
-            Timothenics programs are built around four 30-minute sessions a week—Push, Pull, Legs, and Skills—organized into levels you unlock like a game. You start where you are and climb through Beginner, Intermediate, and Advanced by meeting clear standards.
+            Level-based calisthenics systems built around four 30-minute sessions per week. Progress through clear standards and unlock new abilities.
           </p>
         </div>
       </Section>
 
-      {/* Free 7-Day Start */}
+      {/* Timothenics 30 - First Program Launch */}
       <Section className="bg-background-secondary">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-background border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300">
-            <div className="p-8 md:p-12">
-              <div className="flex items-start justify-between mb-6">
-                <div>
-                  <h2 className="text-white mb-2">Timothenics 7-Day Start</h2>
-                  <div className="inline-block bg-gold/20 text-gold px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">
-                    Free
-                  </div>
-                </div>
-              </div>
-
-              <p className="text-foreground-muted mb-6 text-lg">
-                A free 7-day introduction to the Timothenics system. Four 30-minute sessions that show you what Push, Pull, Legs, and Skills feel like—with minimal gear and clear structure.
-              </p>
-
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">7 days of guided 30-minute sessions</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Train at home or at a park</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-foreground">Perfect way to test the system before committing</span>
-                </li>
-              </ul>
-
-              <a
-                href="/#free-plan"
-                className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg"
-              >
-                Get the 7-Day Plan
-              </a>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* Timothenics 30 - Main Program */}
-      <Section className="bg-background">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-gradient-to-br from-background-secondary to-background border-2 border-gold rounded-lg overflow-hidden">
+          <div className="bg-gradient-to-br from-background to-background-panel border-2 border-gold rounded-lg overflow-hidden">
             <div className="p-8 md:p-12">
               <div className="mb-6">
                 <div className="inline-block bg-gold text-dark px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
-                  Flagship Program
+                  First Launch
                 </div>
                 <h2 className="text-white mb-4">Timothenics 30 – Levels Program</h2>
                 <p className="text-xl text-foreground mb-8">
@@ -175,7 +125,7 @@ export default function Programs() {
               </div>
 
               <a
-                href="#"
+                href="/timothenics-30"
                 className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg"
               >
                 Get Timothenics 30
@@ -185,48 +135,108 @@ export default function Programs() {
         </div>
       </Section>
 
-      {/* Why This Works */}
+      {/* Free 7-Day Start */}
+      <Section className="bg-background">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-background-secondary border border-white/10 rounded-lg overflow-hidden hover:border-gold transition-all duration-300">
+            <div className="p-8 md:p-12">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h2 className="text-white mb-2">Timothenics 7-Day Start</h2>
+                  <div className="inline-block bg-gold/20 text-gold px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">
+                    Free
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-foreground-muted mb-6 text-lg">
+                A free 7-day introduction to the Timothenics system. Four 30-minute sessions that show you what Push, Pull, Legs, and Skills feel like—with minimal gear and clear structure.
+              </p>
+
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-foreground">7 days of guided 30-minute sessions</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-foreground">Train at home or at a park</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-foreground">Perfect way to test the system before committing</span>
+                </li>
+              </ul>
+
+              <a
+                href="/#free-plan"
+                className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gold text-dark font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-all duration-300 shadow-lg"
+              >
+                Get the 7-Day Plan
+              </a>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Future Programs */}
       <Section className="bg-background-secondary">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-white mb-6">More programs coming soon</h2>
+          <p className="text-foreground-muted text-lg">
+            Timothenics 30 is just the beginning. Additional programs with different focuses and training styles are in development. Stay tuned.
+          </p>
+        </div>
+      </Section>
+
+      {/* Why This Works */}
+      <Section className="bg-background">
         <div className="text-center mb-12">
           <h2 className="text-white">Why level-based training works</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
             <h4 className="mb-3 text-white font-semibold">Clear Standards</h4>
             <p className="text-foreground-muted">
               You know exactly what you need to hit to level up. No guessing, no vague "get better" goals.
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
             <h4 className="mb-3 text-white font-semibold">Measurable Progress</h4>
             <p className="text-foreground-muted">
               Track your journey from beginner movements to advanced skills. See your progress in real achievements.
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
             <h4 className="mb-3 text-white font-semibold">Intrinsic Motivation</h4>
             <p className="text-foreground-muted">
               Unlocking skills feels like leveling up in a game. The progress itself becomes the reward.
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
             <h4 className="mb-3 text-white font-semibold">No Plateaus</h4>
             <p className="text-foreground-muted">
               Always working toward the next unlock. There's always a clear next step in your progression.
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
             <h4 className="mb-3 text-white font-semibold">Structured Freedom</h4>
             <p className="text-foreground-muted">
               The framework is fixed, but you progress at your own pace. No rushing, no falling behind.
             </p>
           </div>
 
-          <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
+          <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
             <h4 className="mb-3 text-white font-semibold">Sustainable Intensity</h4>
             <p className="text-foreground-muted">
               30-minute sessions mean you can train consistently without burning out or sacrificing your life.
@@ -236,7 +246,7 @@ export default function Programs() {
       </Section>
 
       {/* CTA */}
-      <Section className="bg-background">
+      <Section className="bg-background-secondary">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="mb-6 text-white">Ready to start leveling up?</h2>
           <p className="text-xl text-foreground-muted mb-8">
