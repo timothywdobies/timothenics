@@ -42,14 +42,14 @@ export default function Gear() {
             <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden">
               <img
                 src="/parallettes.png"
-                alt="Timothenics Parallettes"
+                alt="Parallettes"
                 className="w-full h-full object-contain p-4"
               />
             </div>
 
             <div className="p-8 flex-grow flex flex-col">
               <div className="mb-4">
-                <h3 className="mb-2 text-white group-hover:text-gold transition-colors">Timothenics Parallettes</h3>
+                <h3 className="mb-2 text-white group-hover:text-gold transition-colors">Parallettes</h3>
                 <div className="mb-4">
                   <span className="inline-block bg-gold/20 text-gold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
                     Coming Soon
