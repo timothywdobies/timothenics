@@ -47,7 +47,7 @@ export default function Home() {
 
             {/* Subheading */}
             <p className="text-base md:text-lg leading-relaxed text-gray-300 mb-7 max-w-[420px]">
-              Build real strength with minimal equipment, unlock skills like handstands and muscle-ups, and train anywhere, anytime.
+              Build functional strength with minimal equipment anytime, anywhere.
             </p>
 
             {/* CTA Button */}
