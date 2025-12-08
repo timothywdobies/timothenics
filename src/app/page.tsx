@@ -72,7 +72,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-white mb-4">Timothenics 30</h2>
                 <p className="text-xl text-foreground max-w-2xl mx-auto mb-8">
-                  8-week level-based calisthenics program. Four 30-minute sessions per week. Progress through clear standards and unlock new abilities.
+                  8-week level-based program. Four 30-minute sessions per week. Progress from Beginner to Advanced and unlock new abilities.
                 </p>
               </div>
 
