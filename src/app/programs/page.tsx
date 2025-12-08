@@ -15,17 +15,9 @@ export default function Programs() {
         </div>
 
         <div className="relative z-10 text-center max-w-4xl mx-auto px-8">
-          <div className="mb-4">
-            <span className="text-sm font-medium tracking-widest uppercase text-gold">
-              TIMOTHENICS TRAINING
-            </span>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white mb-4">
-            Choose Your Program
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
+            Timothenics Training Programs
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-            Level-based calisthenics training. Clear standards, measurable progress, 30-minute sessions.
-          </p>
         </div>
       </section>
 
