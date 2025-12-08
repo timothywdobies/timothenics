@@ -28,54 +28,6 @@ export default function App() {
       {/* App Download Section */}
       <AppDownloadSection />
 
-      {/* Features Preview */}
-      <Section className="bg-background-secondary">
-        <div className="text-center mb-12">
-          <h2 className="text-white mb-4">What's in the app</h2>
-          <p className="text-foreground-muted max-w-2xl mx-auto">
-            Everything you need to train with Timothenics, right in your pocket.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="glass-card p-8 text-center group hover:shadow-glow transition-all duration-300">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <svg className="w-8 h-8 text-gold group-hover:text-gold-light transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-              </svg>
-            </div>
-            <h4 className="text-white mb-3 font-semibold group-hover:text-gold transition-colors">Guided Sessions</h4>
-            <p className="text-foreground-muted text-sm">
-              Follow along with every 30-minute mission. Timer, exercise demos, and rest periods all built in.
-            </p>
-          </div>
-
-          <div className="glass-card p-8 text-center group hover:shadow-glow transition-all duration-300">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <svg className="w-8 h-8 text-gold group-hover:text-gold-light transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-            </div>
-            <h4 className="text-white mb-3 font-semibold group-hover:text-gold transition-colors">Progress Tracking</h4>
-            <p className="text-foreground-muted text-sm">
-              Log your workouts, track your level progression, and see your strength gains over time.
-            </p>
-          </div>
-
-          <div className="glass-card p-8 text-center group hover:shadow-glow transition-all duration-300">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <svg className="w-8 h-8 text-gold group-hover:text-gold-light transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-            </div>
-            <h4 className="text-white mb-3 font-semibold group-hover:text-gold transition-colors">Unlock New Levels</h4>
-            <p className="text-foreground-muted text-sm">
-              Complete clear standards to unlock advanced movements and progress to the next level.
-            </p>
-          </div>
-        </div>
-      </Section>
-
       {/* Notify Me CTA */}
       <Section className="bg-background">
         <div className="max-w-2xl mx-auto text-center">

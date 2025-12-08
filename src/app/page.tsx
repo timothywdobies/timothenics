@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Layout from '@/components/Layout'
 import Section from '@/components/Section'
+import AppDownloadSection from '@/components/AppDownloadSection'
 
 export default function Home() {
   const [email, setEmail] = useState('')
@@ -134,6 +135,9 @@ export default function Home() {
           </form>
         </div>
       </Section>
+
+      {/* App Download Section */}
+      <AppDownloadSection />
     </Layout>
   )
 }

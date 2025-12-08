@@ -5,9 +5,6 @@ import Layout from '@/components/Layout'
 import Section from '@/components/Section'
 
 export default function Timothenics30() {
-  // This would be connected to your payment system later
-  const hasPaid = false
-
   return (
     <Layout>
       {/* Hero Section */}
@@ -27,221 +24,91 @@ export default function Timothenics30() {
         </div>
       </Section>
 
-      {/* Pricing Section - Paywall */}
+      {/* Why Timothenics 30 */}
       <Section className="bg-background-secondary">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-white mb-6">Get Full Access</h2>
-          <p className="text-foreground-muted mb-8 text-lg">
-            Unlock the complete Timothenics 30 program and start building real strength with level-based progression.
-          </p>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-white mb-6">Why Timothenics 30?</h2>
+            <p className="text-foreground text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+              Most programs demand 60-90 minutes in a gym. Timothenics 30 is designed for real life—four focused 30-minute sessions each week that build functional strength you can use anywhere. No fluff, no wasted time.
+            </p>
+          </div>
 
-          <div className="glass-card p-10 max-w-md mx-auto">
-            <div className="text-center mb-6">
-              <div className="text-5xl font-bold text-white mb-2">$29</div>
-              <p className="text-foreground-muted">Complete 8-week program</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div className="glass-card p-6 text-center">
+              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center">
+                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-white font-semibold mb-2">30 Minutes</h4>
+              <p className="text-foreground-muted text-sm">No marathon workouts. Every session fits your schedule.</p>
             </div>
 
-            <ul className="text-left mb-8 space-y-3">
+            <div className="glass-card p-6 text-center">
+              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center">
+                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h4 className="text-white font-semibold mb-2">Level-Based</h4>
+              <p className="text-foreground-muted text-sm">Progress from Beginner to Advanced with clear standards.</p>
+            </div>
+
+            <div className="glass-card p-6 text-center">
+              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center">
+                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-white font-semibold mb-2">Minimal Gear</h4>
+              <p className="text-foreground-muted text-sm">Pull-up bar and parallettes. Train anywhere.</p>
+            </div>
+          </div>
+
+          {/* Purchase Section */}
+          <div className="glass-card p-10 md:p-12 max-w-2xl mx-auto border-2 border-gold">
+            <div className="text-center mb-8">
+              <h3 className="text-white text-3xl font-bold mb-3">Get Timothenics 30</h3>
+              <div className="text-6xl font-bold text-gold mb-3">$29</div>
+              <p className="text-foreground-muted">One-time payment • Lifetime access</p>
+            </div>
+
+            <ul className="text-left mb-10 space-y-4 max-w-md mx-auto">
               <li className="flex items-start text-foreground">
-                <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span>Full 4-day workout split (Push, Pull, Legs, Skills)</span>
+                <span>Complete 8-week program with 4-day split</span>
               </li>
               <li className="flex items-start text-foreground">
-                <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span>Level-based progression system</span>
+                <span>Push, Pull, Legs, and Skills sessions</span>
               </li>
               <li className="flex items-start text-foreground">
-                <svg className="w-5 h-5 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span>Lifetime access to all program updates</span>
+                <span>Beginner to Advanced progression tracks</span>
+              </li>
+              <li className="flex items-start text-foreground">
+                <svg className="w-6 h-6 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                <span>All future updates included</span>
               </li>
             </ul>
 
-            <button className="w-full group relative inline-flex items-center justify-center px-10 py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow hover:shadow-glow-lg hover:scale-105 overflow-hidden">
-              <span className="relative z-10">Unlock Program for $29</span>
+            <button className="w-full group relative inline-flex items-center justify-center px-12 py-5 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-base uppercase tracking-wide transition-all duration-300 shadow-glow-lg hover:shadow-glow-lg hover:scale-105 overflow-hidden">
+              <span className="relative z-10">Buy Now - $29</span>
               <div className="absolute inset-0 bg-shimmer animate-shimmer"></div>
             </button>
 
-            <p className="text-foreground-muted/60 text-xs mt-4">
-              Payment processing coming soon
+            <p className="text-foreground-muted/60 text-sm mt-6 text-center">
+              Secure payment processing coming soon
             </p>
-          </div>
-        </div>
-      </Section>
-
-      {/* The Program Content - Locked */}
-      <Section className="bg-background">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-white mb-4">Timothenics – 4 Day / 30 Min Split</h2>
-            <div className="glass-card border-l-4 border-gold rounded-xl p-6 max-w-3xl mx-auto mb-8">
-              <p className="text-foreground text-lg">
-                <span className="font-bold text-gold">Every day:</span> Set a 30-minute timer. Work down the list in order, resting as needed. When you reach the end, loop back to the top until time is up.
-              </p>
-            </div>
-          </div>
-
-          {/* Locked Content Overlay */}
-          <div className="relative">
-            {/* Blurred preview of content */}
-            <div className={hasPaid ? '' : 'blur-sm pointer-events-none select-none'}>
-              {/* Day 1 - Push */}
-              <div className="glass-card p-8 mb-6 hover:border-gold transition-all duration-300">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center mr-4">
-                    <span className="text-gold font-bold text-xl">1</span>
-                  </div>
-                  <div>
-                    <h3 className="text-white text-2xl font-bold">Day 1 – Push 30</h3>
-                    <p className="text-gold text-sm">Focus: Handstand / 90° / Planche + push strength</p>
-                  </div>
-                </div>
-                <div className="bg-background-panel rounded-lg p-6">
-                  <p className="text-foreground-muted mb-4 font-semibold">Circuit (repeat for 30 minutes):</p>
-                  <ul className="space-y-3">
-                    {[
-                      { exercise: 'Tuck planche lean', reps: '20s' },
-                      { exercise: '90° hold progression', reps: '15s' },
-                      { exercise: 'Wall handstand hold', reps: '25s' },
-                      { exercise: 'Pseudo planche push-ups', reps: '8 reps' },
-                      { exercise: 'Pike push-ups', reps: '6 reps' },
-                      { exercise: 'Straight bar or parallel bar dips', reps: '8 reps' },
-                      { exercise: 'Push-ups (normal / diamond / wide)', reps: '12 reps' },
-                    ].map((item, index) => (
-                      <li key={index} className="flex justify-between items-center text-foreground">
-                        <span>{item.exercise}</span>
-                        <span className="text-gold font-semibold ml-4">{item.reps}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Day 2 - Pull */}
-              <div className="glass-card p-8 mb-6 hover:border-gold transition-all duration-300">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center mr-4">
-                    <span className="text-gold font-bold text-xl">2</span>
-                  </div>
-                  <div>
-                    <h3 className="text-white text-2xl font-bold">Day 2 – Pull 30</h3>
-                    <p className="text-gold text-sm">Focus: Muscle-up + front lever</p>
-                  </div>
-                </div>
-                <div className="bg-background-panel rounded-lg p-6">
-                  <p className="text-foreground-muted mb-4 font-semibold">Circuit (repeat for 30 minutes):</p>
-                  <ul className="space-y-3">
-                    {[
-                      { exercise: 'Muscle-up negatives', reps: '3 slow reps' },
-                      { exercise: 'Pull-ups (bodyweight or weighted)', reps: '6 reps' },
-                      { exercise: 'Bodyweight rows', reps: '10 reps' },
-                      { exercise: 'Tuck front lever hold', reps: '15s' },
-                      { exercise: 'Upside-down deadlift', reps: '4 reps' },
-                      { exercise: 'Toes-to-bar', reps: '8 reps' },
-                    ].map((item, index) => (
-                      <li key={index} className="flex justify-between items-center text-foreground">
-                        <span>{item.exercise}</span>
-                        <span className="text-gold font-semibold ml-4">{item.reps}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Day 3 - Legs */}
-              <div className="glass-card p-8 mb-6 hover:border-gold transition-all duration-300">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center mr-4">
-                    <span className="text-gold font-bold text-xl">3</span>
-                  </div>
-                  <div>
-                    <h3 className="text-white text-2xl font-bold">Day 3 – Legs 30</h3>
-                    <p className="text-gold text-sm">Focus: Pistols / unilateral strength + jump power</p>
-                  </div>
-                </div>
-                <div className="bg-background-panel rounded-lg p-6">
-                  <p className="text-foreground-muted mb-4 font-semibold">Circuit (repeat for 30 minutes):</p>
-                  <ul className="space-y-3">
-                    {[
-                      { exercise: 'Pistol squats (or progression)', reps: '4 reps/leg' },
-                      { exercise: 'Bulgarian split squats', reps: '8 reps/leg' },
-                      { exercise: 'Nordic curl progression', reps: '6 reps' },
-                      { exercise: 'Calf raises', reps: '15 reps' },
-                      { exercise: 'Step-ups or walking lunges', reps: '10 reps/leg' },
-                      { exercise: 'Jump squats', reps: '12 reps' },
-                    ].map((item, index) => (
-                      <li key={index} className="flex justify-between items-center text-foreground">
-                        <span>{item.exercise}</span>
-                        <span className="text-gold font-semibold ml-4">{item.reps}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Day 4 - Skills */}
-              <div className="glass-card p-8 hover:border-gold transition-all duration-300">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center mr-4">
-                    <span className="text-gold font-bold text-xl">4</span>
-                  </div>
-                  <div>
-                    <h3 className="text-white text-2xl font-bold">Day 4 – Skills 30</h3>
-                    <p className="text-gold text-sm">Focus: Handstand + front lever + core skills</p>
-                  </div>
-                </div>
-                <div className="bg-background-panel rounded-lg p-6">
-                  <p className="text-foreground-muted mb-4 font-semibold">Circuit (repeat for 30 minutes):</p>
-                  <ul className="space-y-3">
-                    {[
-                      { exercise: 'Chest-to-wall handstand hold', reps: '25s' },
-                      { exercise: 'Wall handstand shoulder taps', reps: '10 reps/side' },
-                      { exercise: 'Tuck front lever pull', reps: '12s' },
-                      { exercise: 'Dragon flags', reps: '8 reps' },
-                      { exercise: 'L-sit (tuck or advanced)', reps: '20s' },
-                      { exercise: 'Hollow body hold', reps: '25s' },
-                    ].map((item, index) => (
-                      <li key={index} className="flex justify-between items-center text-foreground">
-                        <span>{item.exercise}</span>
-                        <span className="text-gold font-semibold ml-4">{item.reps}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Lock Overlay - Only shown if not paid */}
-            {!hasPaid && (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="glass-card p-12 text-center max-w-md border-2 border-gold">
-                  <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center">
-                    <svg className="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-white text-2xl font-bold mb-4">Program Locked</h3>
-                  <p className="text-foreground-muted mb-8">
-                    Unlock the complete 4-day workout program for just $29 and start your training today.
-                  </p>
-                  <a
-                    href="#pricing"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      document.querySelector('.bg-background-secondary')?.scrollIntoView({ behavior: 'smooth' })
-                    }}
-                    className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-dark font-bold text-sm uppercase tracking-wide transition-all duration-300 shadow-glow hover:shadow-glow-lg hover:scale-105"
-                  >
-                    Unlock for $29
-                  </a>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </Section>

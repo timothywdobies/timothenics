@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-foreground/60 max-w-md leading-relaxed">
-              30-minute calisthenics systems for busy people. Build elite strength without your life revolving around training.
+              Simple calisthenics systems that help busy people build functional strength.
             </p>
           </div>
 
