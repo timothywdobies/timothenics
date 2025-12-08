@@ -8,8 +8,12 @@ export default function Programs() {
       {/* Hero Section */}
       <section className="relative h-screen min-h-[500px] flex items-center justify-center overflow-hidden bg-black">
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/programs-hero.png)' }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/programs-hero.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
