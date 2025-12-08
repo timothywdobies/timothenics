@@ -28,7 +28,7 @@ export default function Programs() {
 
             {/* Timothenics 30 */}
             <div className="bg-gray-800 border-2 border-yellow-600 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
-              <div className="p-8 md:p-10 flex-grow">
+              <div className="p-8 md:p-10 flex-grow flex flex-col">
                 <div className="mb-6">
                   <div className="inline-block bg-yellow-600 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
                     Most Popular
@@ -85,7 +85,7 @@ export default function Programs() {
 
             {/* 7-Day Free Plan */}
             <div className="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden hover:border-yellow-600 transition-all duration-300 flex flex-col">
-              <div className="p-8 md:p-10 flex-grow">
+              <div className="p-8 md:p-10 flex-grow flex flex-col">
                 <div className="mb-6">
                   <div className="inline-block bg-yellow-600 bg-opacity-20 text-yellow-600 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
                     Free
@@ -95,7 +95,6 @@ export default function Programs() {
                   </h2>
                   <div className="flex items-baseline gap-2 mb-4">
                     <span className="text-4xl font-bold text-yellow-600">$0</span>
-                    <span className="text-gray-400">free forever</span>
                   </div>
                   <p className="text-lg text-gray-300">
                     Test the Timothenics system with a week of guided training. Experience all four tracks before committing.
