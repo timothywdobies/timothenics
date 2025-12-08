@@ -5,11 +5,11 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Timothenics',
-  description: 'Timothenics',
+  title: 'Master your bodyweight',
+  description: 'Build functional strength with minimal equipment anytime, anywhere.',
   openGraph: {
-    title: 'Timothenics',
-    description: 'Timothenics',
+    title: 'Master your bodyweight',
+    description: 'Build functional strength with minimal equipment anytime, anywhere.',
     url: 'https://timothenics.com',
     siteName: 'Timothenics',
     images: [
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Timothenics',
-    description: 'Timothenics',
+    title: 'Master your bodyweight',
+    description: 'Build functional strength with minimal equipment anytime, anywhere.',
     images: ['https://timothenics.com/og-image.png'],
   },
 }
