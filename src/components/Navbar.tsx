@@ -8,7 +8,6 @@ const navLinks = [
   { href: '/', label: 'HOME' },
   { href: '/programs', label: 'PROGRAMS' },
   { href: '/gear', label: 'EQUIPMENT' },
-  { href: '/clothing', label: 'APPAREL' },
   { href: '/about', label: 'ABOUT' },
   { href: '/app', label: 'APP' },
   { href: '/contact', label: 'CONTACT' },
