@@ -16,7 +16,7 @@ export default function Gear() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(/equipment-hero.png)',
-            backgroundPosition: 'center 25%',
+            backgroundPosition: 'center 60%',
           }}
         >
           {/* Dark Overlay for White Text Readability */}
