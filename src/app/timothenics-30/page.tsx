@@ -18,55 +18,15 @@ export default function Timothenics30() {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white tracking-tight">
             Timothenics 30
           </h1>
-          <p className="text-xl md:text-2xl text-foreground-muted max-w-3xl mx-auto leading-relaxed mb-8">
-            An 8-week, level-based calisthenics system built around three 30-minute sessions per week. Progress through Beginner, Intermediate, and Advanced levels—and unlock specific abilities along the way.
+          <p className="text-xl md:text-2xl text-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+            Timothenics 30 gives you only the calisthenics movements that matter, with clear progressions, so you always know what to do next and how to level up. No fluff, no random exercises, just the ones that move you forward.
           </p>
         </div>
       </Section>
 
-      {/* Why Timothenics 30 */}
+      {/* Purchase Section */}
       <Section className="bg-background-secondary">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-white mb-6">Why Timothenics 30?</h2>
-            <p className="text-foreground text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-              Most programs demand 60-90 minutes in a gym. Timothenics 30 is designed for real life—three focused 30-minute sessions each week that build functional strength you can use anywhere. No fluff, no wasted time.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            <div className="glass-card p-6 text-center">
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center">
-                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h4 className="text-white font-semibold mb-2">30 Minutes</h4>
-              <p className="text-foreground-muted text-sm">No marathon workouts. Every session fits your schedule.</p>
-            </div>
-
-            <div className="glass-card p-6 text-center">
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center">
-                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h4 className="text-white font-semibold mb-2">Level-Based</h4>
-              <p className="text-foreground-muted text-sm">Progress from Beginner to Advanced with clear standards.</p>
-            </div>
-
-            <div className="glass-card p-6 text-center">
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center">
-                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h4 className="text-white font-semibold mb-2">Minimal Gear</h4>
-              <p className="text-foreground-muted text-sm">Pull-up bar and parallettes. Train anywhere.</p>
-            </div>
-          </div>
-
-          {/* Purchase Section */}
           <div className="glass-card p-10 md:p-12 max-w-2xl mx-auto border-2 border-gold">
             <div className="text-center mb-8">
               <h3 className="text-white text-3xl font-bold mb-3">Get Timothenics 30</h3>
