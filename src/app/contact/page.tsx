@@ -223,9 +223,9 @@ export default function Contact() {
             </div>
 
             <div className="bg-background-secondary border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
-              <h4 className="mb-2 text-white">Can I train more than 4 days a week?</h4>
+              <h4 className="mb-2 text-white">Can I train more than 3 days a week?</h4>
               <p className="text-foreground-muted text-sm">
-                You can, but the program is designed for 4 sessions. More isn't always better. Recovery
+                You can, but the program is designed for 3 sessions. More isn't always better. Recovery
                 matters as much as training.
               </p>
             </div>

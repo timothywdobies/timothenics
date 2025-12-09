@@ -19,7 +19,7 @@ export default function Timothenics30() {
             Timothenics 30
           </h1>
           <p className="text-xl md:text-2xl text-foreground-muted max-w-3xl mx-auto leading-relaxed mb-8">
-            An 8-week, level-based calisthenics system built around four 30-minute sessions per week. Progress through Beginner, Intermediate, and Advanced levels—and unlock specific abilities along the way.
+            An 8-week, level-based calisthenics system built around three 30-minute sessions per week. Progress through Beginner, Intermediate, and Advanced levels—and unlock specific abilities along the way.
           </p>
         </div>
       </Section>
@@ -30,7 +30,7 @@ export default function Timothenics30() {
           <div className="text-center mb-12">
             <h2 className="text-white mb-6">Why Timothenics 30?</h2>
             <p className="text-foreground text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-              Most programs demand 60-90 minutes in a gym. Timothenics 30 is designed for real life—four focused 30-minute sessions each week that build functional strength you can use anywhere. No fluff, no wasted time.
+              Most programs demand 60-90 minutes in a gym. Timothenics 30 is designed for real life—three focused 30-minute sessions each week that build functional strength you can use anywhere. No fluff, no wasted time.
             </p>
           </div>
 
@@ -79,13 +79,13 @@ export default function Timothenics30() {
                 <svg className="w-6 h-6 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span>Complete 8-week program with 4-day split</span>
+                <span>Complete 8-week program with 3-day split</span>
               </li>
               <li className="flex items-start text-foreground">
                 <svg className="w-6 h-6 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                <span>Push, Pull, Legs, and Skills sessions</span>
+                <span>Push, Pull, and Legs sessions</span>
               </li>
               <li className="flex items-start text-foreground">
                 <svg className="w-6 h-6 text-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">

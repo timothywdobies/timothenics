@@ -45,7 +45,7 @@ export default function Programs() {
                     <span className="text-gray-400">one-time payment</span>
                   </div>
                   <p className="text-lg text-gray-300">
-                    8-week level-based program. Four 30-minute sessions per week. Progress through Beginner, Intermediate, and Advanced levels.
+                    8-week level-based program. Three 30-minute sessions per week. Progress through Beginner, Intermediate, and Advanced levels.
                   </p>
                 </div>
 
@@ -54,13 +54,13 @@ export default function Programs() {
                     <svg className="w-5 h-5 text-yellow-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-gray-300">4 training tracks: Push, Pull, Legs, Skills</span>
+                    <span className="text-gray-300">3 training tracks: Push, Pull, Legs</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-yellow-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-gray-300">30-minute sessions, 4x per week</span>
+                    <span className="text-gray-300">30-minute sessions, 3x per week</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-yellow-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">

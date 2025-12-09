@@ -122,7 +122,7 @@ export default function SevenDayPlan() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { title: '7 Complete Workouts', desc: 'One session per day, all 30 minutes or less' },
-              { title: 'Push, Pull, Legs, Skills', desc: 'Experience all four training tracks' },
+              { title: 'Push, Pull, Legs', desc: 'Experience the three core training tracks' },
               { title: 'Beginner-Friendly', desc: 'Designed for all fitness levels' },
               { title: 'Zero Equipment Needed', desc: 'Train with just your bodyweight' },
             ].map((item, index) => (

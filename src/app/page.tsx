@@ -73,13 +73,13 @@ export default function Home() {
                 </div>
                 <h2 className="text-white mb-4">Timothenics 30</h2>
                 <p className="text-xl text-foreground max-w-2xl mx-auto mb-8">
-                  8-week level-based program. Four 30-minute sessions per week. Progress from Beginner to Advanced and unlock new abilities.
+                  8-week level-based program. Three 30-minute sessions per week. Progress from Beginner to Advanced and unlock new abilities.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto mb-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gold mb-2">4</div>
+                  <div className="text-3xl font-bold text-gold mb-2">3</div>
                   <div className="text-sm text-foreground-muted">Sessions/Week</div>
                 </div>
                 <div className="text-center">
@@ -112,7 +112,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-white mb-6">Get the Free 7-Day Plan</h2>
           <p className="text-lg text-foreground-muted mb-10">
-            Test the system with seven days of guided 30-minute sessions. See how Push, Pull, Legs, and Skills fit into your actual schedule.
+            Test the system with seven days of guided 30-minute sessions. See how Push, Pull, and Legs fit into your actual schedule.
           </p>
           <form onSubmit={handleEmailSubmit} className="max-w-lg mx-auto">
             <div className="flex flex-col sm:flex-row gap-4">

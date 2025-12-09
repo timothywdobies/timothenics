@@ -14,7 +14,7 @@ export default function Method() {
           </p>
           <h1 className="mb-6 text-white">The Timothenics System</h1>
           <p className="text-xl md:text-2xl text-foreground">
-            Timothenics is simple on purpose: four 30-minute calisthenics sessions, one busy week, and a level system you unlock like a game.
+            Timothenics is simple on purpose: three 30-minute calisthenics sessions, one busy week, and a level system you unlock like a game.
           </p>
         </div>
       </Section>
@@ -28,7 +28,7 @@ export default function Method() {
             Every week you run the same core structure:
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-background border border-white/10 rounded-lg p-6 hover:border-gold transition-all duration-300">
               <h3 className="text-gold font-semibold mb-2 text-xl">Push 30</h3>
               <p className="text-foreground-muted">chest, shoulders, triceps</p>
@@ -40,10 +40,6 @@ export default function Method() {
             <div className="bg-background border border-white/10 rounded-lg p-6 hover:border-gold transition-all duration-300">
               <h3 className="text-gold font-semibold mb-2 text-xl">Legs 30</h3>
               <p className="text-foreground-muted">quads, glutes, hamstrings, calves</p>
-            </div>
-            <div className="bg-background border border-white/10 rounded-lg p-6 hover:border-gold transition-all duration-300">
-              <h3 className="text-gold font-semibold mb-2 text-xl">Skills 30</h3>
-              <p className="text-foreground-muted">handstand, core, levers, control</p>
             </div>
           </div>
 
@@ -74,7 +70,7 @@ export default function Method() {
           </p>
 
           <p className="text-foreground mb-6">
-            Each track—Push, Pull, Legs, Skills—has three levels:
+            Each track—Push, Pull, Legs—has three levels:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -127,7 +123,7 @@ export default function Method() {
           </div>
 
           <p className="text-foreground-muted mt-8 text-lg">
-            As you level up, the session stays 30 minutes, but the movements get more advanced, the volume and tempo change, and the tension and control go way up. The same idea applies to Pull, Legs, and Skills.
+            As you level up, the session stays 30 minutes, but the movements get more advanced, the volume and tempo change, and the tension and control go way up. The same idea applies to Pull and Legs.
           </p>
         </div>
       </Section>
@@ -189,32 +185,6 @@ export default function Method() {
                 </li>
               </ul>
             </div>
-
-            {/* Skills Track */}
-            <div className="bg-background border border-white/10 rounded-lg p-8 hover:border-gold transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <svg className="w-8 h-8 text-gold mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                </svg>
-                <h3 className="text-white font-semibold text-xl">Skills Track</h3>
-              </div>
-              <p className="text-foreground-muted mb-4 text-sm">(Handstand Example)</p>
-              <p className="text-foreground mb-3 text-sm">The Skills session is where you chase unlocks like the handstand:</p>
-              <ul className="space-y-3 text-foreground-muted text-sm">
-                <li className="flex items-start">
-                  <span className="text-gold mr-2 font-bold">Level 1 – Prep:</span>
-                  <span>hollow body holds, wall planks/pike holds, wrist + shoulder prep</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold mr-2 font-bold">Level 2 – Wall Handstand:</span>
-                  <span>chest-to-wall holds, box pike holds, line drills</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold mr-2 font-bold">Level 3 – Freestanding Work:</span>
-                  <span>kick-ups, short freestanding holds, balance drills</span>
-                </li>
-              </ul>
-            </div>
           </div>
 
           <p className="text-foreground-muted text-center text-lg">
@@ -239,8 +209,8 @@ export default function Method() {
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
                 <div>
-                  <h4 className="text-white font-semibold mb-2">Four 30-minute "missions" each week</h4>
-                  <p className="text-foreground-muted text-sm">Push, Pull, Legs, Skills</p>
+                  <h4 className="text-white font-semibold mb-2">Three 30-minute "missions" each week</h4>
+                  <p className="text-foreground-muted text-sm">Push, Pull, Legs</p>
                 </div>
               </div>
             </div>
